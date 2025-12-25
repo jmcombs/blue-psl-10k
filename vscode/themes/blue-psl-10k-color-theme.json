@@ -20,8 +20,11 @@
     "sideBar.background": "#e6e9ef",
     "sideBar.foreground": "#4c4f69",
     "sideBarTitle.foreground": "#4c4f69",
+    "sideBarSectionHeader.background": "#e6e9ef",
+    "sideBarSectionHeader.foreground": "#4c4f69",
+    "sideBarSectionHeader.border": "#ccd0da",
 
-    "statusBar.background": "#dce0e8",
+    "statusBar.background": "#e6e9ef",
     "statusBar.foreground": "#4c4f69",
     "statusBar.debuggingBackground": "#fe640b",
     "statusBar.noFolderBackground": "#ccd0da",
@@ -36,8 +39,12 @@
     "tab.inactiveBackground": "#e6e9ef",
     "tab.inactiveForeground": "#6c6f85",
     "tab.border": "#ccd0da",
+    "tab.hoverBackground": "#e6e9ef",
+    "tab.hoverForeground": "#4c4f69",
 
     "editorGroupHeader.tabsBackground": "#e6e9ef",
+    "editorGroupHeader.noTabsBackground": "#e6e9ef",
+    "editorGroupHeader.border": "#ccd0da",
 
     "panel.background": "#e6e9ef",
     "panel.border": "#ccd0da",

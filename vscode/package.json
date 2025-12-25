@@ -30,7 +30,10 @@
         "uiTheme": "vs",
         "path": "./themes/blue-psl-10k-color-theme.json"
       }
-    ]
+    ],
+    "configurationDefaults": {
+      "terminal.integrated.minimumContrastRatio": 1
+    }
   },
   "icon": "icon.png",
   "galleryBanner": {
