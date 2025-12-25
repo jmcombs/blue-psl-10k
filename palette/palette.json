@@ -1,0 +1,126 @@
+{
+  "$schema": "./palette.schema.json",
+  "name": "Blue PSL 10K",
+  "description": "Eye-friendly pastels. Unapologetically posh. Blue PSL 10K brings the spice.",
+  "variant": "light",
+  "base_theme": "catppuccin-latte",
+
+  "colors": {
+    "latte": {
+      "rosewater": "#dc8a78",
+      "flamingo": "#dd7878",
+      "pink": "#ea76cb",
+      "mauve": "#8839ef",
+      "red": "#d20f39",
+      "maroon": "#e64553",
+      "peach": "#fe640b",
+      "yellow": "#df8e1d",
+      "green": "#40a02b",
+      "teal": "#179299",
+      "sky": "#04a5e5",
+      "sapphire": "#209fb5",
+      "blue": "#1e66f5",
+      "lavender": "#7287fd",
+
+      "text": "#4c4f69",
+      "subtext1": "#5c5f77",
+      "subtext0": "#6c6f85",
+      "overlay2": "#7c7f93",
+      "overlay1": "#8c8fa1",
+      "overlay0": "#9ca0b0",
+      "surface2": "#acb0be",
+      "surface1": "#bcc0cc",
+      "surface0": "#ccd0da",
+      "base": "#eff1f5",
+      "mantle": "#e6e9ef",
+      "crust": "#dce0e8"
+    },
+
+    "custom": {
+      "path_blue": "#3465a4"
+    }
+  },
+
+  "semantic": {
+    "background": "latte.base",
+    "foreground": "latte.text",
+    "cursor": "latte.rosewater",
+    "cursor_text": "latte.base",
+    "selection_background": "#a9c1e2",
+    "selection_foreground": "#24292f",
+
+    "path": "custom.path_blue",
+    "directory": "custom.path_blue",
+
+    "success": "latte.green",
+    "warning": "latte.yellow",
+    "error": "latte.red",
+    "info": "latte.teal",
+
+    "link": "latte.blue",
+    "link_hover": "latte.sky",
+    "link_visited": "latte.lavender",
+
+    "comment": "latte.overlay2",
+    "keyword": "latte.mauve",
+    "string": "latte.green",
+    "number": "latte.peach",
+    "function": "latte.blue",
+    "variable": "latte.text",
+    "type": "latte.yellow",
+    "operator": "latte.sky"
+  },
+
+  "terminal": {
+    "background": "#eff1f5",
+    "foreground": "#4c4f69",
+    "cursor": "#dc8a78",
+    "cursor_text": "#eff1f5",
+    "selection_background": "#a9c1e2",
+    "selection_foreground": "#24292f",
+
+    "ansi": {
+      "black":          "#5c5f77",
+      "red":            "#d20f39",
+      "green":          "#40a02b",
+      "yellow":         "#df8e1d",
+      "blue":           "#3465a4",
+      "magenta":        "#ea76cb",
+      "cyan":           "#179299",
+      "white":          "#acb0be",
+
+      "bright_black":   "#6c6f85",
+      "bright_red":     "#d20f39",
+      "bright_green":   "#40a02b",
+      "bright_yellow":  "#df8e1d",
+      "bright_blue":    "#3465a4",
+      "bright_magenta": "#ea76cb",
+      "bright_cyan":    "#179299",
+      "bright_white":   "#bcc0cc"
+    },
+
+    "indexed": {
+      "16": "#fe640b",
+      "17": "#dc8a78"
+    }
+  },
+
+  "prompt": {
+    "os_background": "latte.surface0",
+    "os_foreground": "#000000",
+    "path_background": "custom.path_blue",
+    "path_foreground": "latte.base",
+    "git_clean_background": "latte.green",
+    "git_dirty_background": "latte.yellow",
+    "git_ahead_background": "latte.sky",
+    "git_behind_background": "latte.green",
+    "git_diverged_background": "latte.maroon",
+    "git_foreground": "latte.base"
+  },
+
+  "notes": {
+    "path_blue_rationale": "The #3465a4 path blue is a classic directory color from GNOME/Adwaita, providing excellent contrast on light backgrounds and a distinctive look that anchors the Blue PSL 10K identity.",
+    "ansi_blue_override": "ANSI color 4 (blue) is intentionally set to #3465a4 instead of Catppuccin Latte's native blue (#1e66f5) so that `ls` directory listings match the Oh-My-Posh path segment color.",
+    "selection_colors": "Selection colors (#a9c1e2 background, #24292f foreground) are GitHub Light-inspired for comfortable reading on a light theme."
+  }
+}
