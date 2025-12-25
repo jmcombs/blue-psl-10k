@@ -1,0 +1,40 @@
+{
+  "name": "blue-psl-10k",
+  "displayName": "Blue PSL 10K",
+  "description": "Eye-friendly pastels. Unapologetically posh. Blue PSL 10K brings the spice.",
+  "version": "0.1.0",
+  "publisher": "jmcombs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmcombs/blue-psl-10k"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "light",
+    "catppuccin",
+    "latte",
+    "pastel"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Blue PSL 10K",
+        "uiTheme": "vs",
+        "path": "./themes/blue-psl-10k-color-theme.json"
+      }
+    ]
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#eff1f5",
+    "theme": "light"
+  }
+}
