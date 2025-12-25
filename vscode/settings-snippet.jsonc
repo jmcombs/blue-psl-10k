@@ -18,7 +18,7 @@
     "editor.lineHighlightBackground": "#4c4f6910",
     "editor.selectionBackground": "#a9c1e2",
     "editor.selectionForeground": "#24292f",
-    "editorCursor.foreground": "#dc8a78",
+    "editorCursor.foreground": "#3f3f3f",
     "editorLineNumber.foreground": "#8c8fa1",
     "editorLineNumber.activeForeground": "#7287fd",
 
@@ -32,6 +32,9 @@
     "sideBar.background": "#e6e9ef",
     "sideBar.foreground": "#4c4f69",
     "sideBarTitle.foreground": "#4c4f69",
+    "sideBarSectionHeader.background": "#e6e9ef",
+    "sideBarSectionHeader.foreground": "#4c4f69",
+    "sideBarSectionHeader.border": "#ccd0da",
 
     // Status Bar
     "statusBar.background": "#dce0e8",
@@ -51,7 +54,11 @@
     "tab.inactiveBackground": "#e6e9ef",
     "tab.inactiveForeground": "#6c6f85",
     "tab.border": "#ccd0da",
+    "tab.hoverBackground": "#e6e9ef",
+    "tab.hoverForeground": "#4c4f69",
     "editorGroupHeader.tabsBackground": "#e6e9ef",
+    "editorGroupHeader.noTabsBackground": "#e6e9ef",
+    "editorGroupHeader.border": "#ccd0da",
 
     // Panel
     "panel.background": "#e6e9ef",
