@@ -21,6 +21,24 @@ A refined light theme for Visual Studio Code built on [Catppuccin Latte](https:/
 - **Optimized Contrast** — Carefully balanced colors for readability without harsh contrasts
 - **Multi-Ecosystem** — Part of the Blue PSL 10K family with matching themes for Ghostty, Oh-My-Posh, and macOS Terminal
 
+## Screenshots
+
+### Editor Overview
+
+![VS Code Editor with Blue PSL 10K](https://raw.githubusercontent.com/jmcombs/blue-psl-10k/main/docs/screenshots/vscode-editor-overview.png)
+
+### Integrated Terminal
+
+![VS Code Terminal with Blue PSL 10K](https://raw.githubusercontent.com/jmcombs/blue-psl-10k/main/docs/screenshots/vscode-terminal.png)
+
+### Theme Selection
+
+![Blue PSL 10K Theme Picker](https://raw.githubusercontent.com/jmcombs/blue-psl-10k/main/docs/screenshots/vscode-theme-picker.png)
+
+### Git Diff View
+
+![Git Diff with Blue PSL 10K](https://raw.githubusercontent.com/jmcombs/blue-psl-10k/main/docs/screenshots/vscode-git-diff.png)
+
 ## Installation
 
 ### From the Marketplace

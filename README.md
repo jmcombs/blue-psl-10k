@@ -32,6 +32,10 @@ The theme is available for:
 | macOS Terminal | ✅ Ready |
 | VS Code        | ✅ Ready |
 
+### Preview
+
+![Blue PSL 10K in VS Code](docs/screenshots/vscode-editor-overview.png)
+
 ---
 
 ## Installation
