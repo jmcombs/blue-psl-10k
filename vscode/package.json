@@ -4,10 +4,24 @@
   "description": "Eye-friendly pastels. Unapologetically posh. Blue PSL 10K brings the spice.",
   "version": "0.1.0",
   "publisher": "jmcombs",
+  "author": {
+    "name": "Jeremy Combs",
+    "url": "https://github.com/jmcombs"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/jmcombs/blue-psl-10k"
+  },
+  "bugs": {
+    "url": "https://github.com/jmcombs/blue-psl-10k/issues"
+  },
+  "homepage": "https://github.com/jmcombs/blue-psl-10k#readme",
+  "qna": "https://github.com/jmcombs/blue-psl-10k/discussions",
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "install-local": "code --install-extension blue-psl-10k-*.vsix"
   },
   "engines": {
     "vscode": "^1.60.0"
@@ -21,7 +35,9 @@
     "light",
     "catppuccin",
     "latte",
-    "pastel"
+    "pastel",
+    "blue",
+    "posh"
   ],
   "contributes": {
     "themes": [
@@ -39,5 +55,8 @@
   "galleryBanner": {
     "color": "#eff1f5",
     "theme": "light"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.7.1"
   }
 }

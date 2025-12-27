@@ -11,6 +11,7 @@ Thumbs.db
 .idea/
 .vscode/*
 !.vscode/extensions.json
+!.vscode/launch.json
 *.swp
 *.swo
 *~
@@ -24,3 +25,6 @@ vscode/out/
 *.tmp
 *.bak
 *.log
+
+# Auto-generated summary files
+Provide_a_short_summary_of_this_project_*.md

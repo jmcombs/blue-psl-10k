@@ -1,2 +1,24 @@
 # Blue PSL 10K - Documentation
-# Screenshots, design notes, and guides
+
+This directory contains screenshots, design notes, and supporting assets.
+
+## Screenshots (to be added)
+
+Capture and add the following screenshots:
+
+- [ ] `screenshots/ghostty-terminal.png` - Ghostty with Blue PSL 10K theme
+- [ ] `screenshots/oh-my-posh-prompt.png` - Oh-My-Posh prompt in action
+- [ ] `screenshots/vscode-editor.png` - VS Code with Blue PSL 10K theme
+- [ ] `screenshots/terminal-app.png` - macOS Terminal with the profile
+- [ ] `screenshots/palette-preview.png` - Color palette swatch
+
+## Branding Assets
+
+- `/vscode/icon.svg` - Source vector icon
+- `/vscode/icon.png` - VS Code extension icon (128x128)
+
+## Design Notes
+
+- Primary accent: `#3465a4` (path blue)
+- Base palette: Catppuccin Latte
+- Philosophy: "Unapologetically posh, eye-friendly spice"
