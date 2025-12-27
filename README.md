@@ -5,6 +5,7 @@
 </p>
 
 <p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=jmcombs.blue-psl-10k"><img src="https://img.shields.io/visual-studio-marketplace/v/jmcombs.blue-psl-10k?style=flat-square&label=VS%20Code&color=3465a4" alt="VS Code Marketplace"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-3465a4?style=flat-square" alt="MIT License"></a>
   <a href="https://github.com/catppuccin/catppuccin"><img src="https://img.shields.io/badge/Base-Catppuccin%20Latte-eff1f5?style=flat-square&labelColor=8839ef" alt="Catppuccin Latte"></a>
   <a href="palette/palette.json"><img src="https://img.shields.io/badge/Path%20Blue-%233465a4-3465a4?style=flat-square" alt="Path Blue"></a>

@@ -152,6 +152,44 @@ The name **Blue PSL 10K** is a playful nod to:
 | `npm run package`       | Create `.vsix` package                 |
 | `npm run publish`       | Publish to VS Code Marketplace         |
 | `npm run install-local` | Install the packaged extension locally |
+| `npm run release:patch` | Bump patch version and publish         |
+| `npm run release:minor` | Bump minor version and publish         |
+| `npm run release:major` | Bump major version and publish         |
+
+### Releasing Updates
+
+To publish a new version to the VS Code Marketplace:
+
+1. **Update the changelog** in `CHANGELOG.md` with your changes
+2. **Bump the version** using one of the release scripts:
+
+   ```bash
+   # For bug fixes (0.1.0 → 0.1.1)
+   npm run release:patch
+
+   # For new features (0.1.0 → 0.2.0)
+   npm run release:minor
+
+   # For breaking changes (0.1.0 → 1.0.0)
+   npm run release:major
+   ```
+
+3. **Commit and tag** the version bump:
+
+   ```bash
+   git add .
+   git commit -m "chore(release): v$(node -p "require('./package.json').version")"
+   git tag "v$(node -p "require('./package.json').version")"
+   git push && git push --tags
+   ```
+
+The release scripts automatically:
+
+- Bump the version in `package.json`
+- Package the extension
+- Publish to the VS Code Marketplace
+
+> **Note:** You must have a valid PAT configured. Run `npx vsce login jmcombs` if prompted.
 
 ### Using the Dev Container
 
