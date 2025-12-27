@@ -98,28 +98,21 @@ The theme is available for:
 
 ### VS Code
 
-**Option A: Install from VSIX (local)**
+**Install from the Marketplace:**
 
-1. Package the extension:
+1. Open **Extensions** in VS Code (`Cmd+Shift+X` / `Ctrl+Shift+X`)
+2. Search for **"Blue PSL 10K"**
+3. Click **Install**
+4. Open the Command Palette (`Cmd+K Cmd+T` / `Ctrl+K Ctrl+T`)
+5. Select **Blue PSL 10K**
 
-   ```bash
-   cd vscode
-   npx @vscode/vsce package
-   ```
+Or install via command line:
 
-2. Install the generated `.vsix` file:
-   - Open VS Code
-   - Press `Cmd+Shift+P` → "Extensions: Install from VSIX..."
-   - Select `vscode/blue-psl-10k-0.1.0.vsix`
+```bash
+code --install-extension jmcombs.blue-psl-10k
+```
 
-3. Select the theme:
-   - Press `Cmd+K Cmd+T` → Choose "Blue PSL 10K"
-
-**Option B: Development mode**
-
-1. Open the `vscode/` folder in VS Code
-2. Press `F5` to launch the Extension Development Host
-3. Select the theme in the new window
+**Marketplace:** [Blue PSL 10K on VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=jmcombs.blue-psl-10k)
 
 ---
 
