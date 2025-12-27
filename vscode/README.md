@@ -61,12 +61,32 @@ For the best experience, add these settings to your VS Code configuration:
 ```json
 {
   "terminal.integrated.minimumContrastRatio": 1,
-  "editor.fontFamily": "'SF Mono', 'Fira Code', 'JetBrains Mono', monospace",
+  "editor.fontFamily": "'MesloLGS NF', 'Fira Code', 'JetBrains Mono', monospace",
+  "terminal.integrated.fontFamily": "'MesloLGS NF', monospace",
   "editor.fontLigatures": true
 }
 ```
 
 > **Note:** The theme automatically sets `terminal.integrated.minimumContrastRatio: 1` to preserve the intended terminal colors.
+
+### Font Installation
+
+[MesloLGS NF](https://github.com/romkatv/powerlevel10k#fonts) (Meslo Nerd Font) is the recommended font for the full Blue PSL 10K experience. It includes all the glyphs needed for Oh-My-Posh prompt icons.
+
+**macOS (Homebrew):**
+
+```bash
+brew tap homebrew/cask-fonts
+brew install font-meslo-lg-nerd-font
+```
+
+**Windows (winget):**
+
+```powershell
+winget install MSIX:NerdFonts.MesloLG
+```
+
+**Manual:** Download from [Nerd Fonts releases](https://github.com/ryanoasis/nerd-fonts/releases)
 
 ## Part of the Blue PSL 10K Family
 
