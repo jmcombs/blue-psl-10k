@@ -1,8 +1,13 @@
-# 🖌️ Style Guide
+<p align="center">
+  <img src="../blue-psl-10k-logo.png" alt="Blue PSL 10K Logo" width="200">
+</p>
 
-A guide on how to properly use the Blue PSL 10K color palette across different platforms and applications.
+<div align="center">
+  <h1>🖌️ Style Guide</h1>
+  <p>A guide on how to properly <strong>use</strong> the Blue PSL 10K color palette</p>
+</div>
 
----
+&nbsp;
 
 ## Overview
 
@@ -19,198 +24,687 @@ A guide on how to properly use the Blue PSL 10K color palette across different p
 
 ## 🎨 Color Palette
 
-### Base Colors (Catppuccin Latte)
+<table>
+  <tr>
+    <th colspan="3" align="center"><h3>Base Colors (Catppuccin Latte)</h3></th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>Hex</th>
+    <th>Usage</th>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_rosewater.png" alt="Rosewater" alt="Rosewater" alt="Rosewater" alt="Rosewater" height="16" width="16"/> <strong>Rosewater</strong></td>
+    <td><code>#dc8a78</code></td>
+    <td>Cursor, accents</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_flamingo.png" alt="Flamingo" alt="Flamingo" alt="Flamingo" alt="Flamingo" height="16" width="16"/> <strong>Flamingo</strong></td>
+    <td><code>#dd7878</code></td>
+    <td>Decorative accents</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_pink.png" alt="Pink" alt="Pink" alt="Pink" alt="Pink" height="16" width="16"/> <strong>Pink</strong></td>
+    <td><code>#ea76cb</code></td>
+    <td>Magenta, special keywords</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_mauve.png" alt="Mauve" alt="Mauve" alt="Mauve" alt="Mauve" height="16" width="16"/> <strong>Mauve</strong></td>
+    <td><code>#8839ef</code></td>
+    <td>Keywords, control flow</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_red.png" alt="Red" alt="Red" alt="Red" alt="Red" height="16" width="16"/> <strong>Red</strong></td>
+    <td><code>#d20f39</code></td>
+    <td>Errors, breakpoints, deletion</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_maroon.png" alt="Maroon" alt="Maroon" alt="Maroon" alt="Maroon" height="16" width="16"/> <strong>Maroon</strong></td>
+    <td><code>#e64553</code></td>
+    <td>Special errors</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_peach.png" alt="Peach" alt="Peach" alt="Peach" alt="Peach" height="16" width="16"/> <strong>Peach</strong></td>
+    <td><code>#fe640b</code></td>
+    <td>Numbers, constants</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_yellow.png" alt="Yellow" alt="Yellow" alt="Yellow" alt="Yellow" height="16" width="16"/> <strong>Yellow</strong></td>
+    <td><code>#df8e1d</code></td>
+    <td>Warnings, types, classes</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_green.png" alt="Green" alt="Green" alt="Green" alt="Green" height="16" width="16"/> <strong>Green</strong></td>
+    <td><code>#40a02b</code></td>
+    <td>Success, strings, additions</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_teal.png" alt="Teal" alt="Teal" alt="Teal" alt="Teal" height="16" width="16"/> <strong>Teal</strong></td>
+    <td><code>#179299</code></td>
+    <td>Info, cyan, special strings</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_sky.png" alt="Sky" alt="Sky" alt="Sky" alt="Sky" height="16" width="16"/> <strong>Sky</strong></td>
+    <td><code>#04a5e5</code></td>
+    <td>Operators, special functions</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_sapphire.png" alt="Sapphire" alt="Sapphire" alt="Sapphire" alt="Sapphire" height="16" width="16"/> <strong>Sapphire</strong></td>
+    <td><code>#209fb5</code></td>
+    <td>Attributes, decorators</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_blue.png" alt="Blue" alt="Blue" alt="Blue" alt="Blue" height="16" width="16"/> <strong>Blue</strong></td>
+    <td><code>#1e66f5</code></td>
+    <td>Functions, links</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_lavender.png" alt="Lavender" alt="Lavender" alt="Lavender" alt="Lavender" height="16" width="16"/> <strong>Lavender</strong></td>
+    <td><code>#7287fd</code></td>
+    <td>Visited links, tags</td>
+  </tr>
+</table>
 
-| Name          | Hex       | Usage                         |
-| ------------- | --------- | ----------------------------- |
-| **Rosewater** | `#dc8a78` | Cursor, accents               |
-| **Flamingo**  | `#dd7878` | Decorative accents            |
-| **Pink**      | `#ea76cb` | Magenta, special keywords     |
-| **Mauve**     | `#8839ef` | Keywords, control flow        |
-| **Red**       | `#d20f39` | Errors, breakpoints, deletion |
-| **Maroon**    | `#e64553` | Special errors                |
-| **Peach**     | `#fe640b` | Numbers, constants            |
-| **Yellow**    | `#df8e1d` | Warnings, types, classes      |
-| **Green**     | `#40a02b` | Success, strings, additions   |
-| **Teal**      | `#179299` | Info, cyan, special strings   |
-| **Sky**       | `#04a5e5` | Operators, special functions  |
-| **Sapphire**  | `#209fb5` | Attributes, decorators        |
-| **Blue**      | `#1e66f5` | Functions, links              |
-| **Lavender**  | `#7287fd` | Visited links, tags           |
+<table>
+  <tr>
+    <th colspan="3" align="center"><h3>Neutral Colors</h3></th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>Hex</th>
+    <th>Usage</th>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_text.png" alt="Text" alt="Text" alt="Text" alt="Text" height="16" width="16"/> <strong>Text</strong></td>
+    <td><code>#4c4f69</code></td>
+    <td>Primary text, variables</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_subtext1.png" alt="subtext1" alt="Subtext1" alt="Subtext1" alt="Subtext1" height="16" width="16"/> <strong>Subtext 1</strong></td>
+    <td><code>#5c5f77</code></td>
+    <td>Secondary text, ANSI black</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_subtext0.png" alt="subtext0" alt="Subtext0" alt="Subtext0" alt="Subtext0" height="16" width="16"/> <strong>Subtext 0</strong></td>
+    <td><code>#6c6f85</code></td>
+    <td>Tertiary text, bright black</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_overlay2.png" alt="overlay2" alt="Overlay2" alt="Overlay2" alt="Overlay2" height="16" width="16"/> <strong>Overlay 2</strong></td>
+    <td><code>#7c7f93</code></td>
+    <td>Comments, subtle text</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_overlay1.png" alt="overlay1" alt="Overlay1" alt="Overlay1" alt="Overlay1" height="16" width="16"/> <strong>Overlay 1</strong></td>
+    <td><code>#8c8fa1</code></td>
+    <td>Very subtle text</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_overlay0.png" alt="overlay0" alt="Overlay0" alt="Overlay0" alt="Overlay0" height="16" width="16"/> <strong>Overlay 0</strong></td>
+    <td><code>#9ca0b0</code></td>
+    <td>Borders, dividers</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_surface2.png" alt="surface2" alt="Surface2" alt="Surface2" alt="Surface2" height="16" width="16"/> <strong>Surface 2</strong></td>
+    <td><code>#acb0be</code></td>
+    <td>ANSI white, raised surfaces</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_surface1.png" alt="surface1" alt="Surface1" alt="Surface1" alt="Surface1" height="16" width="16"/> <strong>Surface 1</strong></td>
+    <td><code>#bcc0cc</code></td>
+    <td>Secondary surfaces, bright white</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_surface0.png" alt="surface0" alt="Surface0" alt="Surface0" alt="Surface0" height="16" width="16"/> <strong>Surface 0</strong></td>
+    <td><code>#ccd0da</code></td>
+    <td>Secondary panes</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_base.png" alt="Base" alt="Base" alt="Base" alt="Base" height="16" width="16"/> <strong>Base</strong></td>
+    <td><code>#eff1f5</code></td>
+    <td>Primary background</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_mantle.png" alt="Mantle" alt="Mantle" alt="Mantle" alt="Mantle" height="16" width="16"/> <strong>Mantle</strong></td>
+    <td><code>#e6e9ef</code></td>
+    <td>Secondary backgrounds</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_crust.png" alt="Crust" alt="Crust" alt="Crust" alt="Crust" height="16" width="16"/> <strong>Crust</strong></td>
+    <td><code>#dce0e8</code></td>
+    <td>Headers, toolbars</td>
+  </tr>
+</table>
 
-### Neutral Colors
+<table>
+  <tr>
+    <th colspan="3" align="center"><h3>Custom Colors</h3></th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>Hex</th>
+    <th>Usage</th>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_path_blue.png" alt="Path_blue" alt="Path Blue" alt="Path Blue" alt="Path Blue" height="16" width="16"/> Path Blue</td>
+    <td><code>#3465a4</code></td>
+    <td>Directories, file paths, prompt segments</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_selection_background.png" alt="Selection_background" alt="Selection Background" alt="Selection Background" alt="Selection Background" height="16" width="16"/> Selection Background</td>
+    <td><code>#a9c1e2</code></td>
+    <td>Selected text background, GitHub Light-inspired</td>
+  </tr>
+  <tr>
+    <td><img src="circles/bluepsl10k_selection_foreground.png" alt="Selection_foreground" alt="Selection Foreground" alt="Selection Foreground" alt="Selection Foreground" height="16" width="16"/> Selection Foreground</td>
+    <td><code>#24292f</code></td>
+    <td>Selected text color, high contrast on selection</td>
+  </tr>
+</table>
 
-| Name          | Hex       | Usage                            |
-| ------------- | --------- | -------------------------------- |
-| **Text**      | `#4c4f69` | Primary text, variables          |
-| **Subtext 1** | `#5c5f77` | Secondary text, ANSI black       |
-| **Subtext 0** | `#6c6f85` | Tertiary text, bright black      |
-| **Overlay 2** | `#7c7f93` | Comments, subtle text            |
-| **Overlay 1** | `#8c8fa1` | Very subtle text                 |
-| **Overlay 0** | `#9ca0b0` | Borders, dividers                |
-| **Surface 2** | `#acb0be` | ANSI white, raised surfaces      |
-| **Surface 1** | `#bcc0cc` | Secondary surfaces, bright white |
-| **Surface 0** | `#ccd0da` | Secondary panes                  |
-| **Base**      | `#eff1f5` | Primary background               |
-| **Mantle**    | `#e6e9ef` | Secondary backgrounds            |
-| **Crust**     | `#dce0e8` | Headers, toolbars                |
-
-### Custom Colors
-
-| Name          | Hex       | Usage                                        |
-| ------------- | --------- | -------------------------------------------- |
-| **Path Blue** | `#3465a4` | **Directories, file paths, prompt segments** |
-
-> **🎯 Path Blue Philosophy**: This custom blue (`#3465a4`) is the signature color of Blue PSL 10K. It's the classic GNOME/Adwaita directory blue that provides excellent contrast on light backgrounds and creates a unified experience across terminal `ls` output, shell prompts, and file explorer colors.
+> **🎯 Custom Colors Philosophy**: Blue PSL 10K includes three custom color overrides:
+>
+> - Path Blue (`#3465a4`): The signature color of this theme. It's the classic GNOME/Adwaita directory blue that provides excellent contrast on light backgrounds and creates a unified experience across terminal `ls` output, shell prompts, and file explorer colors.
+>
+> - **Selection Background & Foreground** (`#a9c1e2` / `#24292f`): Inspired by GitHub's Light theme, these colors were chosen to provide a softer, more sophisticated selection experience that complements the Catppuccin Latte aesthetic while maintaining WCAG AAA contrast ratios. The selection background uses a gentle lavender-blue that doesn't overwhelm the eye, while the foreground uses a dark charcoal that ensures legibility.
 
 ---
 
 ## 📋 General Usage
 
-> **Important**: Text colors are guidelines. Certain cases require deviations for legibility. Always prioritize contrast and readability.
+> [!IMPORTANT]
+> Text colors are guidelines. Certain cases require deviations for legibility. Always prioritize contrast and readability.
 
-### Background Colors
-
-| Function                  | Color(s)                                                      |
-| ------------------------- | ------------------------------------------------------------- |
-| **Primary Background**    | Base `#eff1f5`                                                |
-| **Secondary Backgrounds** | Crust `#dce0e8`, Mantle `#e6e9ef`                             |
-| **Surface Elements**      | Surface 0 `#ccd0da`, Surface 1 `#bcc0cc`, Surface 2 `#acb0be` |
-| **Overlays**              | Overlay 0 `#9ca0b0`, Overlay 1 `#8c8fa1`, Overlay 2 `#7c7f93` |
-
-### Typography
-
-| Function                  | Color(s)                                 |
-| ------------------------- | ---------------------------------------- |
-| **Body Copy**             | Text `#4c4f69`                           |
-| **Main Headline**         | Text `#4c4f69`                           |
-| **Sub-Headlines, Labels** | Subtext 0 `#6c6f85`, Subtext 1 `#5c5f77` |
-| **Subtle Text**           | Overlay 1 `#8c8fa1`                      |
-| **On Accent Colors**      | Base `#eff1f5`                           |
-
-### UI Semantics
-
-| Function                 | Color                     |
-| ------------------------ | ------------------------- |
-| **Links, URLs**          | Blue `#1e66f5`            |
-| **Visited Links**        | Lavender `#7287fd`        |
-| **Success**              | Green `#40a02b`           |
-| **Warnings**             | Yellow `#df8e1d`          |
-| **Errors**               | Red `#d20f39`             |
-| **Info**                 | Teal `#179299`            |
-| **Tags, Pills**          | Blue `#1e66f5`            |
-| **Paths, Directories**   | **Path Blue** `#3465a4`   |
-| **Selection Background** | `#a9c1e2` at 100% opacity |
-| **Selection Foreground** | `#24292f`                 |
-| **Cursor**               | Rosewater `#dc8a78`       |
+<table>
+  <tr>
+    <th colspan="2" align="center"><h3>Background Colors</h3></th>
+  </tr>
+  <tr>
+    <th>Function</th>
+    <th>Colors</th>
+  </tr>
+  <tr>
+    <td>Background Pane</td>
+    <td><img src="circles/bluepsl10k_base.png" alt="Base" alt="Base" alt="Base" alt="Base" height="16" width="16"/> Base</td>
+  </tr>
+  <tr>
+    <td>Secondary Panes</td>
+    <td>
+      <img src="circles/bluepsl10k_crust.png" alt="Crust" alt="Crust" alt="Crust" alt="Crust" height="16" width="16"/> Crust<br>
+      <img src="circles/bluepsl10k_mantle.png" alt="Mantle" alt="Mantle" alt="Mantle" alt="Mantle" height="16" width="16"/> Mantle
+    </td>
+  </tr>
+  <tr>
+    <td>Surface Elements</td>
+    <td>
+      <img src="circles/bluepsl10k_surface0.png" alt="surface0" alt="Surface0" alt="Surface0" alt="Surface0" height="16" width="16"/> Surface 0<br>
+      <img src="circles/bluepsl10k_surface1.png" alt="surface1" alt="Surface1" alt="Surface1" alt="Surface1" height="16" width="16"/> Surface 1<br>
+      <img src="circles/bluepsl10k_surface2.png" alt="surface2" alt="Surface2" alt="Surface2" alt="Surface2" height="16" width="16"/> Surface 2
+    </td>
+  </tr>
+  <tr>
+    <td>Overlays</td>
+    <td>
+      <img src="circles/bluepsl10k_overlay0.png" alt="overlay0" alt="Overlay0" alt="Overlay0" alt="Overlay0" height="16" width="16"/> Overlay 0<br>
+      <img src="circles/bluepsl10k_overlay1.png" alt="overlay1" alt="Overlay1" alt="Overlay1" alt="Overlay1" height="16" width="16"/> Overlay 1<br>
+      <img src="circles/bluepsl10k_overlay2.png" alt="overlay2" alt="Overlay2" alt="Overlay2" alt="Overlay2" height="16" width="16"/> Overlay 2
+    </td>
+  </tr>
+  <tr>
+    <th colspan="2" align="center"><h3>Typography</h3></th>
+  </tr>
+  <tr>
+    <th>Function</th>
+    <th>Colors</th>
+  </tr>
+  <tr>
+    <td>Body Copy</td>
+    <td><img src="circles/bluepsl10k_text.png" alt="Text" alt="Text" alt="Text" alt="Text" height="16" width="16"/> Text</td>
+  </tr>
+  <tr>
+    <td>Main Headline</td>
+    <td><img src="circles/bluepsl10k_text.png" alt="Text" alt="Text" alt="Text" alt="Text" height="16" width="16"/> Text</td>
+  </tr>
+  <tr>
+    <td>Sub-Headlines, Labels</td>
+    <td>
+      <img src="circles/bluepsl10k_subtext0.png" alt="subtext0" alt="Subtext0" alt="Subtext0" alt="Subtext0" height="16" width="16"/> Subtext 0<br>
+      <img src="circles/bluepsl10k_subtext1.png" alt="subtext1" alt="Subtext1" alt="Subtext1" alt="Subtext1" height="16" width="16"/> Subtext 1
+    </td>
+  </tr>
+  <tr>
+    <td>Subtle Text</td>
+    <td><img src="circles/bluepsl10k_overlay1.png" alt="overlay1" alt="Overlay1" alt="Overlay1" alt="Overlay1" height="16" width="16"/> Overlay 1</td>
+  </tr>
+  <tr>
+    <td>On Accent Colors</td>
+    <td><img src="circles/bluepsl10k_base.png" alt="Base" alt="Base" alt="Base" alt="Base" height="16" width="16"/> Base</td>
+  </tr>
+  <tr>
+    <td>Links, URLs</td>
+    <td><img src="circles/bluepsl10k_blue.png" alt="Blue" alt="Blue" alt="Blue" alt="Blue" height="16" width="16"/> Blue</td>
+  </tr>
+  <tr>
+    <td>Visited Links</td>
+    <td><img src="circles/bluepsl10k_lavender.png" alt="Lavender" alt="Lavender" alt="Lavender" alt="Lavender" height="16" width="16"/> Lavender</td>
+  </tr>
+  <tr>
+    <td>Success</td>
+    <td><img src="circles/bluepsl10k_green.png" alt="Green" alt="Green" alt="Green" alt="Green" height="16" width="16"/> Green</td>
+  </tr>
+  <tr>
+    <td>Warnings</td>
+    <td><img src="circles/bluepsl10k_yellow.png" alt="Yellow" alt="Yellow" alt="Yellow" alt="Yellow" height="16" width="16"/> Yellow</td>
+  </tr>
+  <tr>
+    <td>Errors</td>
+    <td><img src="circles/bluepsl10k_red.png" alt="Red" alt="Red" alt="Red" alt="Red" height="16" width="16"/> Red</td>
+  </tr>
+  <tr>
+    <td>Info</td>
+    <td><img src="circles/bluepsl10k_teal.png" alt="Teal" alt="Teal" alt="Teal" alt="Teal" height="16" width="16"/> Teal</td>
+  </tr>
+  <tr>
+    <td>Tags, Pills</td>
+    <td><img src="circles/bluepsl10k_blue.png" alt="Blue" alt="Blue" alt="Blue" alt="Blue" height="16" width="16"/> Blue</td>
+  </tr>
+  <tr>
+    <td>Paths, Directories</td>
+    <td><img src="circles/bluepsl10k_path_blue.png" alt="Path_blue" alt="Path Blue" alt="Path Blue" alt="Path Blue" height="16" width="16"/> Path Blue</td>
+  </tr>
+  <tr>
+    <td>Selection Background</td>
+    <td><img src="circles/bluepsl10k_selection_background.png" alt="Selection_background" alt="Selection Background" alt="Selection Background" alt="Selection Background" height="16" width="16"/> Selection Background</td>
+  </tr>
+  <tr>
+    <td>Selection Foreground</td>
+    <td><img src="circles/bluepsl10k_selection_foreground.png" alt="Selection_foreground" alt="Selection Foreground" alt="Selection Foreground" alt="Selection Foreground" height="16" width="16"/> Selection Foreground</td>
+  </tr>
+  <tr>
+    <td>Cursor</td>
+    <td><img src="circles/bluepsl10k_rosewater.png" alt="Rosewater" alt="Rosewater" alt="Rosewater" alt="Rosewater" height="16" width="16"/> Rosewater</td>
+  </tr>
+</table>
 
 ---
 
 ## 🖥️ Terminal Configuration
 
-### Window & Chrome Colors
-
-| Element                  | Color               | Notes                       |
-| ------------------------ | ------------------- | --------------------------- |
-| **Background**           | Base `#eff1f5`      | Primary terminal background |
-| **Foreground**           | Text `#4c4f69`      | Default text color          |
-| **Cursor**               | Rosewater `#dc8a78` | Visible, warm accent        |
-| **Cursor Text**          | Base `#eff1f5`      | Text on cursor background   |
-| **Selection Background** | `#a9c1e2`           | GitHub Light-inspired       |
-| **Selection Foreground** | `#24292f`           | High contrast on selection  |
-| **Active Border**        | Lavender `#7287fd`  | Active pane indicator       |
-| **Inactive Border**      | Overlay 0 `#9ca0b0` | Inactive pane border        |
-| **Bell Border**          | Yellow `#df8e1d`    | Terminal bell notification  |
+<table>
+  <tr>
+    <th colspan="3" align="center"><h3>Window & Chrome Colors</h3></th>
+  </tr>
+  <tr>
+    <th>Element</th>
+    <th>Color</th>
+    <th>Hex</th>
+  </tr>
+  <tr>
+    <td>Background</td>
+    <td><img src="circles/bluepsl10k_base.png" alt="Base" alt="Base" alt="Base" alt="Base" height="16" width="16"/> Base</td>
+    <td><code>#eff1f5</code></td>
+  </tr>
+  <tr>
+    <td>Foreground</td>
+    <td><img src="circles/bluepsl10k_text.png" alt="Text" alt="Text" alt="Text" alt="Text" height="16" width="16"/> Text</td>
+    <td><code>#4c4f69</code></td>
+  </tr>
+  <tr>
+    <td>Cursor</td>
+    <td><img src="circles/bluepsl10k_rosewater.png" alt="Rosewater" alt="Rosewater" alt="Rosewater" alt="Rosewater" height="16" width="16"/> Rosewater</td>
+    <td><code>#dc8a78</code></td>
+  </tr>
+  <tr>
+    <td>Cursor Text</td>
+    <td><img src="circles/bluepsl10k_base.png" alt="Base" alt="Base" alt="Base" alt="Base" height="16" width="16"/> Base</td>
+    <td><code>#eff1f5</code></td>
+  </tr>
+  <tr>
+    <td>Selection Background</td>
+    <td><img src="circles/bluepsl10k_selection_background.png" alt="Selection_background" alt="Selection Background" alt="Selection Background" alt="Selection Background" height="16" width="16"/> Selection Background</td>
+    <td><code>#a9c1e2</code></td>
+  </tr>
+  <tr>
+    <td>Selection Foreground</td>
+    <td><img src="circles/bluepsl10k_selection_foreground.png" alt="Selection_foreground" alt="Selection Foreground" alt="Selection Foreground" alt="Selection Foreground" height="16" width="16"/> Selection Foreground</td>
+    <td><code>#24292f</code></td>
+  </tr>
+  <tr>
+    <td>Active Border</td>
+    <td><img src="circles/bluepsl10k_lavender.png" alt="Lavender" alt="Lavender" alt="Lavender" alt="Lavender" height="16" width="16"/> Lavender</td>
+    <td><code>#7287fd</code></td>
+  </tr>
+  <tr>
+    <td>Inactive Border</td>
+    <td><img src="circles/bluepsl10k_overlay0.png" alt="overlay0" alt="Overlay0" alt="Overlay0" alt="Overlay0" height="16" width="16"/> Overlay 0</td>
+    <td><code>#9ca0b0</code></td>
+  </tr>
+  <tr>
+    <td>Bell Border</td>
+    <td><img src="circles/bluepsl10k_yellow.png" alt="Yellow" alt="Yellow" alt="Yellow" alt="Yellow" height="16" width="16"/> Yellow</td>
+    <td><code>#df8e1d</code></td>
+  </tr>
+</table>
 
 ### ANSI Colors (16-color palette)
 
-#### Regular Colors (0-7)
+<table>
+  <tr>
+    <th colspan="3" align="center"><h3>Regular Colors (0-7)</h3></th>
+  </tr>
+  <tr>
+    <th>Index</th>
+    <th>Color</th>
+    <th>Hex</th>
+  </tr>
+  <tr>
+    <td>color0 (Black)</td>
+    <td><img src="circles/bluepsl10k_subtext1.png" alt="subtext1" alt="Subtext1" alt="Subtext1" alt="Subtext1" height="16" width="16"/> Subtext 1</td>
+    <td><code>#5c5f77</code></td>
+  </tr>
+  <tr>
+    <td>color1 (Red)</td>
+    <td><img src="circles/bluepsl10k_red.png" alt="Red" alt="Red" alt="Red" alt="Red" height="16" width="16"/> Red</td>
+    <td><code>#d20f39</code></td>
+  </tr>
+  <tr>
+    <td>color2 (Green)</td>
+    <td><img src="circles/bluepsl10k_green.png" alt="Green" alt="Green" alt="Green" alt="Green" height="16" width="16"/> Green</td>
+    <td><code>#40a02b</code></td>
+  </tr>
+  <tr>
+    <td>color3 (Yellow)</td>
+    <td><img src="circles/bluepsl10k_yellow.png" alt="Yellow" alt="Yellow" alt="Yellow" alt="Yellow" height="16" width="16"/> Yellow</td>
+    <td><code>#df8e1d</code></td>
+  </tr>
+  <tr>
+    <td>color4 (Blue)</td>
+    <td><img src="circles/bluepsl10k_path_blue.png" alt="Path_blue" alt="Path Blue" alt="Path Blue" alt="Path Blue" height="16" width="16"/> Path Blue ⚠️</td>
+    <td><code>#3465a4</code></td>
+  </tr>
+  <tr>
+    <td>color5 (Magenta)</td>
+    <td><img src="circles/bluepsl10k_pink.png" alt="Pink" alt="Pink" alt="Pink" alt="Pink" height="16" width="16"/> Pink</td>
+    <td><code>#ea76cb</code></td>
+  </tr>
+  <tr>
+    <td>color6 (Cyan)</td>
+    <td><img src="circles/bluepsl10k_teal.png" alt="Teal" alt="Teal" alt="Teal" alt="Teal" height="16" width="16"/> Teal</td>
+    <td><code>#179299</code></td>
+  </tr>
+  <tr>
+    <td>color7 (White)</td>
+    <td><img src="circles/bluepsl10k_surface2.png" alt="surface2" alt="Surface2" alt="Surface2" alt="Surface2" height="16" width="16"/> Surface 2</td>
+    <td><code>#acb0be</code></td>
+  </tr>
+</table>
 
-| Name            | Color         | Hex       | Usage                   |
-| --------------- | ------------- | --------- | ----------------------- |
-| **Black (0)**   | Subtext 1     | `#5c5f77` | Dark text               |
-| **Red (1)**     | Red           | `#d20f39` | Errors, deletions       |
-| **Green (2)**   | Green         | `#40a02b` | Success, additions      |
-| **Yellow (3)**  | Yellow        | `#df8e1d` | Warnings, modified      |
-| **Blue (4)**    | **Path Blue** | `#3465a4` | **Directories** ⚠️       |
-| **Magenta (5)** | Pink          | `#ea76cb` | Archives, special files |
-| **Cyan (6)**    | Teal          | `#179299` | Links, info             |
-| **White (7)**   | Surface 2     | `#acb0be` | Light text              |
+> **⚠️ Important**: ANSI Blue (color4) is intentionally set to Path Blue (`#3465a4`) instead of Catppuccin's native Blue (`#1e66f5`). This ensures that `ls` directory listings match the color used in Oh-My-Posh path segments and other UI elements, creating a unified directory color experience.
 
-> **⚠️ Important**: ANSI Blue (color4) is intentionally set to **Path Blue** (`#3465a4`) instead of Catppuccin's native Blue (`#1e66f5`). This ensures that `ls` directory listings match the color used in Oh-My-Posh path segments and other UI elements, creating a unified directory color experience.
+<table>
+  <tr>
+    <th colspan="3" align="center"><h3>Bright Colors (8-15)</h3></th>
+  </tr>
+  <tr>
+    <th>Index</th>
+    <th>Color</th>
+    <th>Hex</th>
+  </tr>
+  <tr>
+    <td>color8 (Bright Black)</td>
+    <td><img src="circles/bluepsl10k_subtext0.png" alt="subtext0" alt="Subtext0" alt="Subtext0" alt="Subtext0" height="16" width="16"/> Subtext 0</td>
+    <td><code>#6c6f85</code></td>
+  </tr>
+  <tr>
+    <td>color9 (Bright Red)</td>
+    <td><img src="circles/bluepsl10k_red.png" alt="Red" alt="Red" alt="Red" alt="Red" height="16" width="16"/> Red</td>
+    <td><code>#d20f39</code></td>
+  </tr>
+  <tr>
+    <td>color10 (Bright Green)</td>
+    <td><img src="circles/bluepsl10k_green.png" alt="Green" alt="Green" alt="Green" alt="Green" height="16" width="16"/> Green</td>
+    <td><code>#40a02b</code></td>
+  </tr>
+  <tr>
+    <td>color11 (Bright Yellow)</td>
+    <td><img src="circles/bluepsl10k_yellow.png" alt="Yellow" alt="Yellow" alt="Yellow" alt="Yellow" height="16" width="16"/> Yellow</td>
+    <td><code>#df8e1d</code></td>
+  </tr>
+  <tr>
+    <td>color12 (Bright Blue)</td>
+    <td><img src="circles/bluepsl10k_path_blue.png" alt="Path_blue" alt="Path Blue" alt="Path Blue" alt="Path Blue" height="16" width="16"/> Path Blue ⚠️</td>
+    <td><code>#3465a4</code></td>
+  </tr>
+  <tr>
+    <td>color13 (Bright Magenta)</td>
+    <td><img src="circles/bluepsl10k_pink.png" alt="Pink" alt="Pink" alt="Pink" alt="Pink" height="16" width="16"/> Pink</td>
+    <td><code>#ea76cb</code></td>
+  </tr>
+  <tr>
+    <td>color14 (Bright Cyan)</td>
+    <td><img src="circles/bluepsl10k_teal.png" alt="Teal" alt="Teal" alt="Teal" alt="Teal" height="16" width="16"/> Teal</td>
+    <td><code>#179299</code></td>
+  </tr>
+  <tr>
+    <td>color15 (Bright White)</td>
+    <td><img src="circles/bluepsl10k_surface1.png" alt="surface1" alt="Surface1" alt="Surface1" alt="Surface1" height="16" width="16"/> Surface 1</td>
+    <td><code>#bcc0cc</code></td>
+  </tr>
+</table>
 
-#### Bright Colors (8-15)
-
-| Name                    | Color         | Hex       | Usage                  |
-| ----------------------- | ------------- | --------- | ---------------------- |
-| **Bright Black (8)**    | Subtext 0     | `#6c6f85` | Comments, dim text     |
-| **Bright Red (9)**      | Red           | `#d20f39` | Emphasized errors      |
-| **Bright Green (10)**   | Green         | `#40a02b` | Emphasized success     |
-| **Bright Yellow (11)**  | Yellow        | `#df8e1d` | Emphasized warnings    |
-| **Bright Blue (12)**    | **Path Blue** | `#3465a4` | **Bold directories** ⚠️ |
-| **Bright Magenta (13)** | Pink          | `#ea76cb` | Emphasized special     |
-| **Bright Cyan (14)**    | Teal          | `#179299` | Emphasized info        |
-| **Bright White (15)**   | Surface 1     | `#bcc0cc` | Brightest text         |
-
-#### Extended Colors (256-color palette)
-
-| Index  | Color     | Hex       | Usage             |
-| ------ | --------- | --------- | ----------------- |
-| **16** | Peach     | `#fe640b` | Additional accent |
-| **17** | Rosewater | `#dc8a78` | Additional accent |
+<table>
+  <tr>
+    <th colspan="3" align="center"><h3>Extended Colors (256-color palette)</h3></th>
+  </tr>
+  <tr>
+    <th>Index</th>
+    <th>Color</th>
+    <th>Hex</th>
+  </tr>
+  <tr>
+    <td>color16</td>
+    <td><img src="circles/bluepsl10k_peach.png" alt="Peach" alt="Peach" alt="Peach" alt="Peach" height="16" width="16"/> Peach</td>
+    <td><code>#fe640b</code></td>
+  </tr>
+  <tr>
+    <td>color17</td>
+    <td><img src="circles/bluepsl10k_rosewater.png" alt="Rosewater" alt="Rosewater" alt="Rosewater" alt="Rosewater" height="16" width="16"/> Rosewater</td>
+    <td><code>#dc8a78</code></td>
+  </tr>
+</table>
 
 ---
 
 ## 👨‍💻 Code Editor Styling
 
-### Syntax Highlighting
+<table>
+  <tr>
+    <th colspan="3" align="center"><h3>Syntax Highlighting</h3></th>
+  </tr>
+  <tr>
+    <th>Element</th>
+    <th>Color</th>
+    <th>Hex</th>
+  </tr>
+  <tr>
+    <td>Comments</td>
+    <td><img src="circles/bluepsl10k_overlay2.png" alt="overlay2" alt="Overlay2" alt="Overlay2" alt="Overlay2" height="16" width="16"/> Overlay 2</td>
+    <td><code>#7c7f93</code></td>
+  </tr>
+  <tr>
+    <td>Keywords</td>
+    <td><img src="circles/bluepsl10k_mauve.png" alt="Mauve" alt="Mauve" alt="Mauve" alt="Mauve" height="16" width="16"/> Mauve</td>
+    <td><code>#8839ef</code></td>
+  </tr>
+  <tr>
+    <td>Strings</td>
+    <td><img src="circles/bluepsl10k_green.png" alt="Green" alt="Green" alt="Green" alt="Green" height="16" width="16"/> Green</td>
+    <td><code>#40a02b</code></td>
+  </tr>
+  <tr>
+    <td>Numbers</td>
+    <td><img src="circles/bluepsl10k_peach.png" alt="Peach" alt="Peach" alt="Peach" alt="Peach" height="16" width="16"/> Peach</td>
+    <td><code>#fe640b</code></td>
+  </tr>
+  <tr>
+    <td>Functions</td>
+    <td><img src="circles/bluepsl10k_blue.png" alt="Blue" alt="Blue" alt="Blue" alt="Blue" height="16" width="16"/> Blue</td>
+    <td><code>#1e66f5</code></td>
+  </tr>
+  <tr>
+    <td>Variables</td>
+    <td><img src="circles/bluepsl10k_text.png" alt="Text" alt="Text" alt="Text" alt="Text" height="16" width="16"/> Text</td>
+    <td><code>#4c4f69</code></td>
+  </tr>
+  <tr>
+    <td>Types</td>
+    <td><img src="circles/bluepsl10k_yellow.png" alt="Yellow" alt="Yellow" alt="Yellow" alt="Yellow" height="16" width="16"/> Yellow</td>
+    <td><code>#df8e1d</code></td>
+  </tr>
+  <tr>
+    <td>Operators</td>
+    <td><img src="circles/bluepsl10k_sky.png" alt="Sky" alt="Sky" alt="Sky" alt="Sky" height="16" width="16"/> Sky</td>
+    <td><code>#04a5e5</code></td>
+  </tr>
+  <tr>
+    <td>Constants</td>
+    <td><img src="circles/bluepsl10k_peach.png" alt="Peach" alt="Peach" alt="Peach" alt="Peach" height="16" width="16"/> Peach</td>
+    <td><code>#fe640b</code></td>
+  </tr>
+  <tr>
+    <td>Attributes</td>
+    <td><img src="circles/bluepsl10k_sapphire.png" alt="Sapphire" alt="Sapphire" alt="Sapphire" alt="Sapphire" height="16" width="16"/> Sapphire</td>
+    <td><code>#209fb5</code></td>
+  </tr>
+</table>
 
-| Element        | Color               | Notes                      |
-| -------------- | ------------------- | -------------------------- |
-| **Comments**   | Overlay 2 `#7c7f93` | Subtle but readable        |
-| **Keywords**   | Mauve `#8839ef`     | Control flow, import, etc. |
-| **Strings**    | Green `#40a02b`     | String literals            |
-| **Numbers**    | Peach `#fe640b`     | Numeric literals           |
-| **Functions**  | Blue `#1e66f5`      | Function names and calls   |
-| **Variables**  | Text `#4c4f69`      | Default text color         |
-| **Types**      | Yellow `#df8e1d`    | Class names, type names    |
-| **Operators**  | Sky `#04a5e5`       | `+`, `-`, `=`, etc.        |
-| **Constants**  | Peach `#fe640b`     | `TRUE`, `NULL`, etc.       |
-| **Attributes** | Sapphire `#209fb5`  | Decorators, annotations    |
+<table>
+  <tr>
+    <th colspan="3" align="center"><h3>UI Elements</h3></th>
+  </tr>
+  <tr>
+    <th>Element</th>
+    <th>Color</th>
+    <th>Hex</th>
+  </tr>
+  <tr>
+    <td>Background</td>
+    <td><img src="circles/bluepsl10k_base.png" alt="Base" alt="Base" alt="Base" alt="Base" height="16" width="16"/> Base</td>
+    <td><code>#eff1f5</code></td>
+  </tr>
+  <tr>
+    <td>Foreground</td>
+    <td><img src="circles/bluepsl10k_text.png" alt="Text" alt="Text" alt="Text" alt="Text" height="16" width="16"/> Text</td>
+    <td><code>#4c4f69</code></td>
+  </tr>
+  <tr>
+    <td>Line Numbers</td>
+    <td><img src="circles/bluepsl10k_overlay1.png" alt="overlay1" alt="Overlay1" alt="Overlay1" alt="Overlay1" height="16" width="16"/> Overlay 1</td>
+    <td><code>#8c8fa1</code></td>
+  </tr>
+  <tr>
+    <td>Cursor Line</td>
+    <td><img src="circles/bluepsl10k_mantle.png" alt="Mantle" alt="Mantle" alt="Mantle" alt="Mantle" height="16" width="16"/> Mantle</td>
+    <td><code>#e6e9ef</code></td>
+  </tr>
+  <tr>
+    <td>Selection</td>
+    <td><img src="circles/bluepsl10k_selection_background.png" alt="Selection_background" alt="Selection Background" alt="Selection Background" alt="Selection Background" height="16" width="16"/> Selection Background</td>
+    <td><code>#a9c1e2</code></td>
+  </tr>
+  <tr>
+    <td>Find Match</td>
+    <td><img src="circles/bluepsl10k_yellow.png" alt="Yellow" alt="Yellow" alt="Yellow" alt="Yellow" height="16" width="16"/> Yellow</td>
+    <td><code>#df8e1d</code></td>
+  </tr>
+  <tr>
+    <td>Active Link</td>
+    <td><img src="circles/bluepsl10k_blue.png" alt="Blue" alt="Blue" alt="Blue" alt="Blue" height="16" width="16"/> Blue</td>
+    <td><code>#1e66f5</code></td>
+  </tr>
+</table>
 
-### UI Elements
+<table>
+  <tr>
+    <th colspan="3" align="center"><h3>Diff & Version Control</h3></th>
+  </tr>
+  <tr>
+    <th>Function</th>
+    <th>Color</th>
+    <th>Hex</th>
+  </tr>
+  <tr>
+    <td>Added Line Background</td>
+    <td><img src="circles/bluepsl10k_green.png" alt="Green" alt="Green" alt="Green" alt="Green" height="16" width="16"/> Green <strong>(15-25% opacity)</strong></td>
+    <td><code>#40a02b</code></td>
+  </tr>
+  <tr>
+    <td>Added Text Background</td>
+    <td><img src="circles/bluepsl10k_green.png" alt="Green" alt="Green" alt="Green" alt="Green" height="16" width="16"/> Green <strong>(10-20% opacity)</strong></td>
+    <td><code>#40a02b</code></td>
+  </tr>
+  <tr>
+    <td>Modified Line Background</td>
+    <td><img src="circles/bluepsl10k_blue.png" alt="Blue" alt="Blue" alt="Blue" alt="Blue" height="16" width="16"/> Blue <strong>(15-25% opacity)</strong></td>
+    <td><code>#1e66f5</code></td>
+  </tr>
+  <tr>
+    <td>Modified Text Background</td>
+    <td><img src="circles/bluepsl10k_blue.png" alt="Blue" alt="Blue" alt="Blue" alt="Blue" height="16" width="16"/> Blue <strong>(10-20% opacity)</strong></td>
+    <td><code>#1e66f5</code></td>
+  </tr>
+  <tr>
+    <td>Removed Line Background</td>
+    <td><img src="circles/bluepsl10k_red.png" alt="Red" alt="Red" alt="Red" alt="Red" height="16" width="16"/> Red <strong>(15-25% opacity)</strong></td>
+    <td><code>#d20f39</code></td>
+  </tr>
+  <tr>
+    <td>Removed Text Background</td>
+    <td><img src="circles/bluepsl10k_red.png" alt="Red" alt="Red" alt="Red" alt="Red" height="16" width="16"/> Red <strong>(10-20% opacity)</strong></td>
+    <td><code>#d20f39</code></td>
+  </tr>
+  <tr>
+    <td>Diff Header</td>
+    <td><img src="circles/bluepsl10k_blue.png" alt="Blue" alt="Blue" alt="Blue" alt="Blue" height="16" width="16"/> Blue</td>
+    <td><code>#1e66f5</code></td>
+  </tr>
+  <tr>
+    <td>Hunk Header</td>
+    <td><img src="circles/bluepsl10k_peach.png" alt="Peach" alt="Peach" alt="Peach" alt="Peach" height="16" width="16"/> Peach</td>
+    <td><code>#fe640b</code></td>
+  </tr>
+  <tr>
+    <td>File Path</td>
+    <td><img src="circles/bluepsl10k_pink.png" alt="Pink" alt="Pink" alt="Pink" alt="Pink" height="16" width="16"/> Pink</td>
+    <td><code>#ea76cb</code></td>
+  </tr>
+</table>
 
-| Element          | Color               | Notes                    |
-| ---------------- | ------------------- | ------------------------ |
-| **Background**   | Base `#eff1f5`      | Editor background        |
-| **Foreground**   | Text `#4c4f69`      | Default text             |
-| **Line Numbers** | Overlay 1 `#8c8fa1` | Gutter line numbers      |
-| **Cursor Line**  | Mantle `#e6e9ef`    | Current line highlight   |
-| **Selection**    | `#a9c1e2`           | Selected text background |
-| **Find Match**   | Yellow `#df8e1d`    | Search highlights        |
-| **Active Link**  | Blue `#1e66f5`      | Clickable links          |
-
-### Diff & Version Control
-
-| Function                     | Color           | Opacity/Usage  |
-| ---------------------------- | --------------- | -------------- |
-| **Added Line Background**    | Green `#40a02b` | 15-25% opacity |
-| **Added Text Background**    | Green `#40a02b` | 10-20% opacity |
-| **Modified Line Background** | Blue `#1e66f5`  | 15-25% opacity |
-| **Modified Text Background** | Blue `#1e66f5`  | 10-20% opacity |
-| **Removed Line Background**  | Red `#d20f39`   | 15-25% opacity |
-| **Removed Text Background**  | Red `#d20f39`   | 10-20% opacity |
-| **Diff Header**              | Blue `#1e66f5`  | Full opacity   |
-| **Hunk Header**              | Peach `#fe640b` | Full opacity   |
-| **File Path**                | Pink `#ea76cb`  | Full opacity   |
-
-### Debugging
-
-| Function                 | Color            | Notes                  |
-| ------------------------ | ---------------- | ---------------------- |
-| **Breakpoint Icon**      | Red `#d20f39`    | Breakpoint marker      |
-| **Breakpoint Line**      | Transparent      | No background change   |
-| **Current Line (Debug)** | Yellow `#df8e1d` | 15% opacity background |
+<table>
+  <tr>
+    <th colspan="3" align="center"><h3>Debugging</h3></th>
+  </tr>
+  <tr>
+    <th>Function</th>
+    <th>Color</th>
+    <th>Hex</th>
+  </tr>
+  <tr>
+    <td>Breakpoint Icon</td>
+    <td><img src="circles/bluepsl10k_red.png" alt="Red" alt="Red" alt="Red" alt="Red" height="16" width="16"/> Red</td>
+    <td><code>#d20f39</code></td>
+  </tr>
+  <tr>
+    <td>Breakpoint Line</td>
+    <td>Transparent</td>
+    <td>—</td>
+  </tr>
+  <tr>
+    <td>Current Line (Debug)</td>
+    <td><img src="circles/bluepsl10k_yellow.png" alt="Yellow" alt="Yellow" alt="Yellow" alt="Yellow" height="16" width="16"/> Yellow <strong>(15% opacity)</strong></td>
+    <td><code>#df8e1d</code></td>
+  </tr>
+</table>
 
 ---
 
@@ -218,15 +712,59 @@ A guide on how to properly use the Blue PSL 10K color palette across different p
 
 The Blue PSL 10K prompt follows PowerLevel10k conventions with clean segment-based styling:
 
-| Segment          | Background              | Foreground      | Purpose                    |
-| ---------------- | ----------------------- | --------------- | -------------------------- |
-| **OS Icon**      | Surface 0 `#ccd0da`     | Black `#000000` | Operating system indicator |
-| **Path**         | **Path Blue** `#3465a4` | Base `#eff1f5`  | Current working directory  |
-| **Git Clean**    | Green `#40a02b`         | Base `#eff1f5`  | No uncommitted changes     |
-| **Git Dirty**    | Yellow `#df8e1d`        | Base `#eff1f5`  | Uncommitted changes        |
-| **Git Ahead**    | Sky `#04a5e5`           | Base `#eff1f5`  | Commits ahead of remote    |
-| **Git Behind**   | Green `#40a02b`         | Base `#eff1f5`  | Commits behind remote      |
-| **Git Diverged** | Maroon `#e64553`        | Base `#eff1f5`  | Diverged from remote       |
+<table>
+  <tr>
+    <th colspan="4" align="center"><h3>Prompt Segments</h3></th>
+  </tr>
+  <tr>
+    <th>Segment</th>
+    <th>Background</th>
+    <th>Foreground</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td>OS Icon</td>
+    <td><img src="circles/bluepsl10k_surface0.png" alt="surface0" alt="Surface0" alt="Surface0" alt="Surface0" height="16" width="16"/> Surface 0</td>
+    <td><img src="circles/bluepsl10k_text.png" alt="Text" alt="Text" alt="Text" alt="Text" height="16" width="16"/> Text</td>
+    <td>Operating system indicator</td>
+  </tr>
+  <tr>
+    <td>Path</td>
+    <td><img src="circles/bluepsl10k_path_blue.png" alt="Path_blue" alt="Path Blue" alt="Path Blue" alt="Path Blue" height="16" width="16"/> Path Blue</td>
+    <td><img src="circles/bluepsl10k_base.png" alt="Base" alt="Base" alt="Base" alt="Base" height="16" width="16"/> Base</td>
+    <td>Current working directory</td>
+  </tr>
+  <tr>
+    <td>Git Clean</td>
+    <td><img src="circles/bluepsl10k_green.png" alt="Green" alt="Green" alt="Green" alt="Green" height="16" width="16"/> Green</td>
+    <td><img src="circles/bluepsl10k_base.png" alt="Base" alt="Base" alt="Base" alt="Base" height="16" width="16"/> Base</td>
+    <td>No uncommitted changes</td>
+  </tr>
+  <tr>
+    <td>Git Dirty</td>
+    <td><img src="circles/bluepsl10k_yellow.png" alt="Yellow" alt="Yellow" alt="Yellow" alt="Yellow" height="16" width="16"/> Yellow</td>
+    <td><img src="circles/bluepsl10k_base.png" alt="Base" alt="Base" alt="Base" alt="Base" height="16" width="16"/> Base</td>
+    <td>Uncommitted changes</td>
+  </tr>
+  <tr>
+    <td>Git Ahead</td>
+    <td><img src="circles/bluepsl10k_sky.png" alt="Sky" alt="Sky" alt="Sky" alt="Sky" height="16" width="16"/> Sky</td>
+    <td><img src="circles/bluepsl10k_base.png" alt="Base" alt="Base" alt="Base" alt="Base" height="16" width="16"/> Base</td>
+    <td>Commits ahead of remote</td>
+  </tr>
+  <tr>
+    <td>Git Behind</td>
+    <td><img src="circles/bluepsl10k_green.png" alt="Green" alt="Green" alt="Green" alt="Green" height="16" width="16"/> Green</td>
+    <td><img src="circles/bluepsl10k_base.png" alt="Base" alt="Base" alt="Base" alt="Base" height="16" width="16"/> Base</td>
+    <td>Commits behind remote</td>
+  </tr>
+  <tr>
+    <td>Git Diverged</td>
+    <td><img src="circles/bluepsl10k_maroon.png" alt="Maroon" alt="Maroon" alt="Maroon" alt="Maroon" height="16" width="16"/> Maroon</td>
+    <td><img src="circles/bluepsl10k_base.png" alt="Base" alt="Base" alt="Base" alt="Base" height="16" width="16"/> Base</td>
+    <td>Diverged from remote</td>
+  </tr>
+</table>
 
 ---
 
@@ -241,6 +779,7 @@ Blue PSL 10K makes several intentional deviations from the base Catppuccin Latte
 **To**: Path Blue `#3465a4`
 
 **Rationale**:
+
 - `#3465a4` is the classic GNOME/Adwaita directory blue
 - Creates instant visual recognition for directories across all tools
 - Ensures `ls` output, shell prompts, and file explorers use the same color
@@ -248,6 +787,7 @@ Blue PSL 10K makes several intentional deviations from the base Catppuccin Latte
 - Honors Unix/Linux directory color conventions
 
 **Where applied**:
+
 - ANSI colors 4 (blue) and 12 (bright blue)
 - Oh-My-Posh path segments
 - File explorer directory colors
@@ -259,10 +799,12 @@ Blue PSL 10K makes several intentional deviations from the base Catppuccin Latte
 **Changed**: Selection background and foreground
 **From**: Catppuccin standards (Overlay 2 with opacity)
 **To**:
+
 - Background: `#a9c1e2`
 - Foreground: `#24292f`
 
 **Rationale**:
+
 - GitHub Light's selection colors are battle-tested for readability
 - Provides strong contrast without being jarring
 - Familiar to developers who use GitHub regularly
@@ -273,6 +815,7 @@ Blue PSL 10K makes several intentional deviations from the base Catppuccin Latte
 **Kept**: Rosewater `#dc8a78`
 
 **Rationale**:
+
 - Warm, attention-grabbing without being harsh
 - Distinguishes from functional blues and greens
 - Maintains Catppuccin's design philosophy
@@ -305,7 +848,3 @@ Blue PSL 10K maintains WCAG AA compliance for text contrast:
 - [Blue PSL 10K Repository](https://github.com/jmcombs/blue-psl-10k)
 
 ---
-
-**Last Updated**: January 6, 2026
-**Palette Version**: 1.0.0
-**Base Theme**: Catppuccin Latte

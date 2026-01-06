@@ -26,12 +26,14 @@
 
 The theme is available for:
 
+<!-- markdownlint-disable MD060 -->
 | Ecosystem      | Status  |
 | -------------- | ------- |
 | Ghostty        | ✅ Ready |
 | Oh-My-Posh     | ✅ Ready |
 | macOS Terminal | ✅ Ready |
 | VS Code        | ✅ Ready |
+<!-- markdownlint-enable MD060 -->
 
 ### Preview
 
@@ -45,46 +47,49 @@ The theme is available for:
 
 1. Copy the theme file to Ghostty's themes directory:
 
-   ```bash
-   mkdir -p ~/.config/ghostty/themes
-   cp ghostty/blue-psl-10k ~/.config/ghostty/themes/
-   ```
+```bash
+mkdir -p ~/.config/ghostty/themes
+cp ghostty/blue-psl-10k ~/.config/ghostty/themes/
+```
 
-2. Set the theme in your Ghostty config (`~/.config/ghostty/config`):
+1. Set the theme in your Ghostty config (`~/.config/ghostty/config`):
 
-   ```ini
-   theme = blue-psl-10k
-   ```
+```ini
+theme = blue-psl-10k
+```
 
-3. Restart Ghostty or reload the configuration.
+1. Restart Ghostty or reload the configuration.
 
 ### Oh-My-Posh
 
 1. Copy the theme file to your preferred location:
 
-   ```bash
-   mkdir -p ~/.config/oh-my-posh/themes
-   cp posh/blue-psl-10k.omp.json ~/.config/oh-my-posh/themes/
-   ```
+```bash
+mkdir -p ~/.config/oh-my-posh/themes
+cp posh/blue-psl-10k.omp.json ~/.config/oh-my-posh/themes/
+```
 
-2. Update your shell profile to use the theme:
+1. Update your shell profile to use the theme:
 
-   **Bash** (`~/.bashrc`):
-   ```bash
-   eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/themes/blue-psl-10k.omp.json)"
-   ```
+**Bash** (`~/.bashrc`):
 
-   **Zsh** (`~/.zshrc`):
-   ```zsh
-   eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/themes/blue-psl-10k.omp.json)"
-   ```
+```bash
+eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/themes/blue-psl-10k.omp.json)"
+```
 
-   **PowerShell** (`$PROFILE`):
-   ```powershell
-   oh-my-posh init pwsh --config ~/.config/oh-my-posh/themes/blue-psl-10k.omp.json | Invoke-Expression
-   ```
+**Zsh** (`~/.zshrc`):
 
-3. Restart your shell or source the profile.
+```zsh
+eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/themes/blue-psl-10k.omp.json)"
+```
+
+**PowerShell** (`$PROFILE`):
+
+```powershell
+oh-my-posh init pwsh --config ~/.config/oh-my-posh/themes/blue-psl-10k.omp.json | Invoke-Expression
+```
+
+1. Restart your shell or source the profile.
 
 ### macOS Terminal
 
@@ -94,17 +99,17 @@ The theme is available for:
    open "terminal/Blue PSL 10K.terminal"
    ```
 
-2. Go to **Terminal → Settings → Profiles** and set "Blue PSL 10K" as the default.
+1. Go to **Terminal → Settings → Profiles** and set "Blue PSL 10K" as the default.
 
 ### VS Code
 
 **Install from the Marketplace:**
 
 1. Open **Extensions** in VS Code (`Cmd+Shift+X` / `Ctrl+Shift+X`)
-2. Search for **"Blue PSL 10K"**
-3. Click **Install**
-4. Open the Command Palette (`Cmd+K Cmd+T` / `Ctrl+K Ctrl+T`)
-5. Select **Blue PSL 10K**
+1. Search for **"Blue PSL 10K"**
+1. Click **Install**
+1. Open the Command Palette (`Cmd+K Cmd+T` / `Ctrl+K Ctrl+T`)
+1. Select **Blue PSL 10K**
 
 Or install via command line:
 
@@ -126,6 +131,8 @@ Blue PSL 10K is built on Catppuccin Latte with a custom accent:
 | Background    | `#eff1f5` | Catppuccin Latte base                              |
 | Foreground    | `#4c4f69` | Catppuccin Latte text                              |
 | *More colors* | ...       | See `palette/palette.json`                         |
+
+For detailed color usage patterns, design philosophy, and implementation guidelines, see the [**Style Guide**](palette/STYLE_GUIDE.md).
 
 ---
 
