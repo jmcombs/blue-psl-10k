@@ -33,6 +33,7 @@ The theme is available for:
 | Oh-My-Posh     | ✅ Ready |
 | macOS Terminal | ✅ Ready |
 | VS Code        | ✅ Ready |
+| pi coding agent| 🆕 Added |
 <!-- markdownlint-enable MD060 -->
 
 ### Preview
@@ -118,6 +119,23 @@ code --install-extension jmcombs.blue-psl-10k
 ```
 
 **Marketplace:** [Blue PSL 10K on VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=jmcombs.blue-psl-10k)
+
+### pi coding agent
+
+1. Copy the theme file to your `pi` themes directory:
+
+```bash
+mkdir -p ~/.pi/agent/themes
+cp pi_theme/blue-psl-10k.json ~/.pi/agent/themes/
+```
+
+2. Select the theme in `pi` via `/settings` or by adding it to your `settings.json`:
+
+```json
+{
+  "theme": "blue-psl-10k"
+}
+```
 
 ---
 
