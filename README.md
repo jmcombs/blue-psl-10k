@@ -33,6 +33,7 @@ The theme is available for:
 | Oh-My-Posh     | ✅ Ready |
 | macOS Terminal | ✅ Ready |
 | VS Code        | ✅ Ready |
+| pi coding agent| 🆕 Added |
 <!-- markdownlint-enable MD060 -->
 
 ### Preview
@@ -118,6 +119,50 @@ code --install-extension jmcombs.blue-psl-10k
 ```
 
 **Marketplace:** [Blue PSL 10K on VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=jmcombs.blue-psl-10k)
+
+### pi coding agent
+
+Blue PSL 10K is distributed for `pi` exclusively via Git — there is no npm package. Choose one of the two methods below.
+
+#### Option 1 — Install as a Pi package (recommended)
+
+```bash
+# Global install (all projects)
+pi install git:github.com/jmcombs/blue-psl-10k
+
+# Or scoped to the current project (writes to .pi/settings.json)
+pi install git:github.com/jmcombs/blue-psl-10k -l
+
+# Pin to a specific release tag
+pi install git:github.com/jmcombs/blue-psl-10k@v1.0.0
+```
+
+Re-run the same `pi install git:…` command to pull updates. To remove the theme, run `pi remove blue-psl-10k`.
+
+#### Option 2 — Install from a dotfiles clone (symlink)
+
+```bash
+git clone https://github.com/jmcombs/blue-psl-10k.git ~/dotfiles/sources/blue-psl-10k
+
+mkdir -p ~/.pi/agent/themes
+ln -s ~/dotfiles/sources/blue-psl-10k/pi_theme/blue-psl-10k.json ~/.pi/agent/themes/blue-psl-10k.json
+
+# Or scope to a single project instead
+mkdir -p .pi/themes
+ln -s ~/dotfiles/sources/blue-psl-10k/pi_theme/blue-psl-10k.json .pi/themes/blue-psl-10k.json
+```
+
+> **Tip:** `pi` hot-reloads themes when the file changes, so a `git pull` in `~/dotfiles/sources/blue-psl-10k` applies new theme revisions without restarting `pi`.
+
+#### Activate the theme
+
+Select the theme in `pi` via `/settings`, or set `"theme": "blue-psl-10k"` in `~/.pi/agent/settings.json` (or `.pi/settings.json` for project scope):
+
+```json
+{
+  "theme": "blue-psl-10k"
+}
+```
 
 ---
 
