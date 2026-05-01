@@ -29,7 +29,7 @@
     "toolPendingTint": "#e8ecf5",
     "toolSuccessTint": "#e6f1e2",
     "toolErrorTint": "#f7e3e7",
-    "customMessageTint": "#e7eaff"
+    "customMessageTint": "#f5ebe7"
   },
   "colors": {
     "accent": "accent",
