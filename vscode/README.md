@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=jmcombs.blue-psl-10k"><img src="https://img.shields.io/visual-studio-marketplace/v/jmcombs.blue-psl-10k?style=flat-square&label=Marketplace&color=3465a4" alt="VS Code Marketplace Version"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=jmcombs.blue-psl-10k"><img src="https://vsmarketplacebadges.dev/version/jmcombs.blue-psl-10k.svg?label=Marketplace&color=3465a4&style=flat-square" alt="VS Code Marketplace Version"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-3465a4?style=flat-square" alt="License: MIT"></a>
 </p>
 
@@ -110,11 +110,12 @@ winget install MSIX:NerdFonts.MesloLG
 
 This VS Code theme is part of a cohesive multi-ecosystem theme project:
 
-| Ecosystem                                                                    | Description                 |
-| ---------------------------------------------------------------------------- | --------------------------- |
-| [Ghostty](https://github.com/jmcombs/blue-psl-10k/tree/main/ghostty)         | Terminal theme for Ghostty  |
-| [Oh-My-Posh](https://github.com/jmcombs/blue-psl-10k/tree/main/posh)         | Cross-shell prompt theme    |
-| [macOS Terminal](https://github.com/jmcombs/blue-psl-10k/tree/main/terminal) | Native Terminal.app profile |
+| Ecosystem                                                                     | Description                   |
+| ----------------------------------------------------------------------------- | ----------------------------- |
+| [Ghostty](https://github.com/jmcombs/blue-psl-10k/tree/main/ghostty)          | Terminal theme for Ghostty    |
+| [Oh-My-Posh](https://github.com/jmcombs/blue-psl-10k/tree/main/posh)          | Cross-shell prompt theme      |
+| [macOS Terminal](https://github.com/jmcombs/blue-psl-10k/tree/main/terminal)  | Native Terminal.app profile   |
+| [pi coding agent](https://github.com/jmcombs/blue-psl-10k/tree/main/pi_theme) | Theme for the pi coding agent |
 
 All variants share the same palette and the signature `#3465a4` path blue for a unified look across your development environment.
 
@@ -128,80 +129,7 @@ The name **Blue PSL 10K** is a playful nod to:
 
 ## Development
 
-### Local Development
-
-**Prerequisites:** Node.js 18+, npm, VS Code
-
-1. Clone the repository and open the `vscode/` folder:
-
-   ```bash
-   git clone https://github.com/jmcombs/blue-psl-10k.git
-   cd blue-psl-10k/vscode
-   npm install
-   ```
-
-2. Press `F5` to launch the Extension Development Host
-3. In the new window, select the **Blue PSL 10K** theme (`Cmd+K Cmd+T`)
-4. Edit `themes/blue-psl-10k-color-theme.json` to make changes
-5. Reload the Extension Development Host (`Cmd+R`) to see updates
-
-### Available Scripts
-
-| Command                 | Description                            |
-| ----------------------- | -------------------------------------- |
-| `npm run package`       | Create `.vsix` package                 |
-| `npm run publish`       | Publish to VS Code Marketplace         |
-| `npm run install-local` | Install the packaged extension locally |
-| `npm run release:patch` | Bump patch version and publish         |
-| `npm run release:minor` | Bump minor version and publish         |
-| `npm run release:major` | Bump major version and publish         |
-
-### Releasing Updates
-
-To publish a new version to the VS Code Marketplace:
-
-1. **Update the changelog** in `CHANGELOG.md` with your changes
-2. **Bump the version** using one of the release scripts:
-
-   ```bash
-   # For bug fixes (0.1.0 → 0.1.1)
-   npm run release:patch
-
-   # For new features (0.1.0 → 0.2.0)
-   npm run release:minor
-
-   # For breaking changes (0.1.0 → 1.0.0)
-   npm run release:major
-   ```
-
-3. **Commit and tag** the version bump:
-
-   ```bash
-   git add .
-   git commit -m "chore(release): v$(node -p "require('./package.json').version")"
-   git tag "v$(node -p "require('./package.json').version")"
-   git push && git push --tags
-   ```
-
-The release scripts automatically:
-
-- Bump the version in `package.json`
-- Package the extension
-- Publish to the VS Code Marketplace
-
-> **Note:** You must have a valid PAT configured. Run `npx vsce login jmcombs` if prompted.
-
-### Using the Dev Container
-
-Alternatively, use the included dev container for a consistent environment:
-
-1. Install [Docker](https://www.docker.com/products/docker-desktop/) and the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
-2. Open the **repository root** (`blue-psl-10k/`) in VS Code
-3. Click **"Reopen in Container"** when prompted
-4. Dependencies install automatically via `postCreateCommand`
-5. Press `F5` to launch the Extension Development Host
-
-This also works with [GitHub Codespaces](https://github.com/features/codespaces).
+Interested in contributing or building the extension locally? See [CONTRIBUTING.md](https://github.com/jmcombs/blue-psl-10k/blob/main/CONTRIBUTING.md) in the repository for development setup, release process, and contribution guidelines.
 
 ## Support
 
