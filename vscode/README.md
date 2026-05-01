@@ -110,11 +110,11 @@ winget install MSIX:NerdFonts.MesloLG
 
 This VS Code theme is part of a cohesive multi-ecosystem theme project:
 
-| Ecosystem                                                                    | Description                 |
-| ---------------------------------------------------------------------------- | --------------------------- |
-| [Ghostty](https://github.com/jmcombs/blue-psl-10k/tree/main/ghostty)         | Terminal theme for Ghostty  |
-| [Oh-My-Posh](https://github.com/jmcombs/blue-psl-10k/tree/main/posh)         | Cross-shell prompt theme    |
-| [macOS Terminal](https://github.com/jmcombs/blue-psl-10k/tree/main/terminal) | Native Terminal.app profile |
+| Ecosystem                                                                     | Description                   |
+| ----------------------------------------------------------------------------- | ----------------------------- |
+| [Ghostty](https://github.com/jmcombs/blue-psl-10k/tree/main/ghostty)          | Terminal theme for Ghostty    |
+| [Oh-My-Posh](https://github.com/jmcombs/blue-psl-10k/tree/main/posh)          | Cross-shell prompt theme      |
+| [macOS Terminal](https://github.com/jmcombs/blue-psl-10k/tree/main/terminal)  | Native Terminal.app profile   |
 | [pi coding agent](https://github.com/jmcombs/blue-psl-10k/tree/main/pi_theme) | Theme for the pi coding agent |
 
 All variants share the same palette and the signature `#3465a4` path blue for a unified look across your development environment.
