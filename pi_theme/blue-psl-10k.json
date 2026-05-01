@@ -83,5 +83,10 @@
     "thinkingHigh": "sky",
     "thinkingXhigh": "magenta",
     "bashMode": "pink"
+  },
+  "export": {
+    "pageBg": "base",
+    "cardBg": "mantle",
+    "infoBg": "customMessageTint"
   }
 }
