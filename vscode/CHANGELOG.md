@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-05-01
+
+### Changed
+
+- **Marketplace badge** replaced — shields.io's `visual-studio-marketplace` endpoints were retired, switched to `vsmarketplacebadges.dev`
+- **README streamlined** — removed the `Development` section (Local Development, Available Scripts, Releasing Updates, Using the Dev Container) and replaced it with a pointer to `CONTRIBUTING.md` on GitHub
+- **"Part of the Blue PSL 10K Family" table** now includes the `pi coding agent` row
+
+### Notes
+
+- Documentation-only release — theme files are unchanged from 0.1.0.
+
 ## [0.1.0] - 2025-12-26
 
 ### Added
@@ -49,5 +61,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[Unreleased]: https://github.com/jmcombs/blue-psl-10k/compare/vscode-v0.1.0...HEAD
+[Unreleased]: https://github.com/jmcombs/blue-psl-10k/compare/vscode-v0.1.1...HEAD
+[0.1.1]: https://github.com/jmcombs/blue-psl-10k/compare/vscode-v0.1.0...vscode-v0.1.1
 [0.1.0]: https://github.com/jmcombs/blue-psl-10k/releases/tag/vscode-v0.1.0
