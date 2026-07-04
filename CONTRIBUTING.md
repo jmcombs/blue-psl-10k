@@ -47,7 +47,7 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/):
 - `style(scope): description` – Formatting, no code change
 - `refactor(scope): description` – Code restructuring
 
-Scopes: `ghostty`, `posh`, `terminal`, `vscode`, `palette`, `pi`, `docs`
+Scopes: `ghostty`, `posh`, `terminal`, `vscode`, `palette`, `pi`, `herdr`, `docs`
 
 ## Development Guidelines
 
