@@ -34,6 +34,7 @@ The theme is available for:
 | macOS Terminal | ✅ Ready |
 | VS Code        | ✅ Ready |
 | pi coding agent| ✅ Ready |
+| herdr          | ✅ Ready |
 <!-- markdownlint-enable MD060 -->
 
 ### Preview
@@ -163,6 +164,22 @@ Select the theme in `pi` via `/settings`, or set `"theme": "blue-psl-10k"` in `~
   "theme": "blue-psl-10k"
 }
 ```
+
+### herdr
+
+[herdr](https://herdr.dev) has no importable theme-file mechanism — its built-in themes are compiled in — so Blue PSL 10K ships as a config fragment that overlays herdr's built-in `catppuccin-latte` base.
+
+1. Open the fragment `herdr/blue-psl-10k.toml` and copy its `[theme]` and `[theme.custom]` blocks into your herdr config (`~/.config/herdr/config.toml`).
+
+2. Apply it without restarting:
+
+```bash
+herdr server reload-config
+```
+
+The overlay unifies herdr's UI with the rest of Blue PSL 10K — the `#3465a4` path blue on tabs, borders, and accents; the Oh-My-Posh status color language for agent/git states; and an eye-friendly low-chroma active-row background.
+
+> **Note:** herdr exposes no font-weight control and no per-row foreground token, so the agent subtitle can't be bolded and the active row uses a light blue (dark text stays legible). See the comments in `herdr/blue-psl-10k.toml` for details.
 
 ---
 

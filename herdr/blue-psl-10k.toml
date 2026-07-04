@@ -1,0 +1,65 @@
+# Blue PSL 10K — herdr theme
+# ===========================
+# Eye-friendly pastels. Unapologetically posh. Blue PSL 10K brings the spice.
+#
+# herdr has no importable theme-file mechanism (built-in themes are compiled in),
+# so this is a config fragment: merge the two blocks below into your
+# ~/.config/herdr/config.toml, then run `herdr server reload-config`.
+#
+# The base is herdr's built-in `catppuccin-latte` — the same foundation as the
+# rest of Blue PSL 10K. `[theme.custom]` overlays only what differs: the #3465a4
+# path blue identity, the Oh-My-Posh status color language, and an eye-friendly
+# active-row background.
+#
+# Source: https://github.com/jmcombs/blue-psl-10k
+
+[theme]
+name = "catppuccin-latte"
+
+# Blue PSL 10K overlay — Catppuccin Latte base, merged with the Oh My Posh
+# prompt's status color language. Both derive from Catppuccin Latte, so the
+# semantic hues already match; path blue is the one unifying override.
+[theme.custom]
+
+# Identity — path/directory blue (matches OMP `path` segment + ANSI blue)
+blue   = "#3465a4"
+accent = "#3465a4"
+
+# Status semantics — same hues the prompt uses for git/exit states
+green  = "#40a02b"   # success · git clean    (OMP green)
+yellow = "#df8e1d"   # warning · git dirty    (OMP yellow)
+red    = "#d20f39"   # error   · exit code>0  (OMP red)
+teal   = "#179299"   # info                   (OMP teal)
+peach  = "#fe640b"   # accent runtime         (OMP peach)
+mauve  = "#8839ef"   # keyword / runtime      (OMP mauve)
+
+# Active space/agent background — low-chroma blue-grey (gentle on astigmatism,
+# still discernible from the panel; avoids saturated-blue edge shimmer)
+surface_dim          = "#d4dbe6"
+selection_background = "#a9c1e2"
+selection_foreground = "#24292f"
+
+# Muted text — readable on both the light panel and the blue active row
+overlay0 = "#4c4f69"   # sidebar headers + active agent name
+overlay1 = "#5c5f77"   # inactive agent subtitle
+subtext0 = "#5c5f77"   # inactive agent title
+
+cursor = "#dc8a78"
+
+# ---------------------------------------------------------------------------
+# Notes on herdr's theming limits (why a few things aren't themeable here):
+#
+#   * No font-weight control. herdr renders the agent title bold and the
+#     "idle · claude" subtitle regular; there is no config knob for weight, so
+#     the subtitle can't be emboldened — only its color/contrast is adjustable.
+#
+#   * No per-row foreground token. The active row's text is drawn with the
+#     global `text` / `overlay0` / `green` tokens, and herdr does NOT
+#     auto-contrast them against the row background (unlike tabs). A dark
+#     path-blue active background therefore renders text unreadably; the
+#     light `#d4dbe6` / `#a9c1e2` blues keep the dark text legible.
+#
+#   * No `sky` / `maroon` / `sapphire` tokens. The prompt's git-ahead (sky) and
+#     git-diverged (maroon) colors have no herdr equivalent, so those two
+#     states can't be individually themed.
+# ---------------------------------------------------------------------------
