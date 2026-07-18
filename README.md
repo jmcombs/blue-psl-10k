@@ -33,6 +33,7 @@ The theme is available for:
 | Oh-My-Posh     | ✅ Ready |
 | macOS Terminal | ✅ Ready |
 | VS Code        | ✅ Ready |
+| Neovim         | ✅ Ready |
 | pi coding agent| ✅ Ready |
 | herdr          | ✅ Ready |
 <!-- markdownlint-enable MD060 -->
@@ -180,6 +181,31 @@ herdr server reload-config
 The overlay unifies herdr's UI with the rest of Blue PSL 10K — the `#3465a4` path blue on tabs, borders, and accents; the Oh-My-Posh status color language for agent/git states; and an eye-friendly low-chroma active-row background.
 
 > **Note:** herdr exposes no font-weight control and no per-row foreground token, so the agent subtitle can't be bolded and the active row uses a light blue (dark text stays legible). See the comments in `herdr/blue-psl-10k.toml` for details.
+
+### Neovim
+
+Blue PSL 10K ships as a standalone Neovim colorscheme (no external theme dependency). This repository is itself the plugin — install it directly from GitHub.
+
+With [lazy.nvim](https://github.com/folke/lazy.nvim):
+
+```lua
+{
+  "jmcombs/blue-psl-10k",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    require("blue-psl-10k").setup({
+      transparent = false,     -- true = clear editor backgrounds (terminal shows through)
+      italic_comments = true,
+    })
+    vim.cmd.colorscheme("blue-psl-10k")
+  end,
+}
+```
+
+A matching [lualine](https://github.com/nvim-lualine/lualine.nvim) theme is bundled — set `theme = "blue-psl-10k"` in your lualine `opts`.
+
+The colorscheme covers the base editor UI, Tree-sitter and LSP semantic tokens, diagnostics, Telescope, GitSigns, and render-markdown, plus the `:terminal` ANSI palette. Colors follow the same [Style Guide](palette/STYLE_GUIDE.md) mapping used across the ecosystem: `#3465a4` path blue for directories, mauve keywords, green strings, blue functions, and the GitHub-Light-inspired selection pair.
 
 ---
 
