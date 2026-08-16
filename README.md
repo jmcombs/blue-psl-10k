@@ -36,6 +36,7 @@ The theme is available for:
 | Neovim         | ✅ Ready |
 | pi coding agent| ✅ Ready |
 | herdr          | ✅ Ready |
+| Hermes dashboard | ✅ Ready |
 <!-- markdownlint-enable MD060 -->
 
 ### Preview
@@ -181,6 +182,26 @@ herdr server reload-config
 The overlay unifies herdr's UI with the rest of Blue PSL 10K — the `#3465a4` path blue on tabs, borders, and accents; the Oh-My-Posh status color language for agent/git states; and an eye-friendly low-chroma active-row background.
 
 > **Note:** herdr exposes no font-weight control and no per-row foreground token, so the agent subtitle can't be bolded and the active row uses a light blue (dark text stays legible). See the comments in `herdr/blue-psl-10k.toml` for details.
+
+### Hermes dashboard
+
+Official theme YAML for `hermes dashboard` (port 9119). The registry key is `blue-psl-10k`.
+
+1. Copy or symlink the YAML into `$HERMES_HOME/dashboard-themes/` (`HERMES_HOME` defaults to `~/.hermes`):
+
+```bash
+mkdir -p "${HERMES_HOME:-$HOME/.hermes}/dashboard-themes"
+cp hermes/dashboard-themes/blue-psl-10k.yaml "${HERMES_HOME:-$HOME/.hermes}/dashboard-themes/"
+
+# Or symlink from a clone of this repo
+ln -s "$(pwd)/hermes/dashboard-themes/blue-psl-10k.yaml" \
+  "${HERMES_HOME:-$HOME/.hermes}/dashboard-themes/blue-psl-10k.yaml"
+```
+
+1. Set `dashboard.theme: blue-psl-10k` in the Hermes config, or pick **Blue PSL 10K** in the dashboard palette.
+1. Refresh the browser. No process restart is required.
+
+See [hermes/README.md](hermes/README.md) and [Extending the Dashboard](https://hermes-agent.nousresearch.com/docs/user-guide/features/extending-the-dashboard).
 
 ### Neovim
 

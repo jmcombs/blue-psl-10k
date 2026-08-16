@@ -1,0 +1,170 @@
+# Official Hermes dashboard theme — Blue PSL 10K (light only).
+# Canonical source: this repository (blue-psl-10k).
+#
+# First-class API (Extending the Dashboard):
+#   palette / typography / layout / colorOverrides / componentStyles
+# customCSS is also official, but only used below for host gaps those
+# keys cannot reach (SelectionSwitcher, [data-surface=white], <code>
+# painted with --background, user YAML cannot set terminalBackground).
+
+name: blue-psl-10k
+label: Blue PSL 10K
+description: Light Catppuccin Latte + Path Blue chrome — eye-friendly pastels
+
+palette:
+  background: "#eff1f5"
+  midground: "#4c4f69"
+  foreground:
+    hex: "#4c4f69"
+    alpha: 0
+  warmGlow: "rgba(52, 101, 164, 0.06)"
+  noiseOpacity: 0
+
+typography:
+  fontSans: '"Atkinson Hyperlegible", ui-sans-serif, system-ui, sans-serif'
+  fontMono: '"MesloLGS NF", "MesloLGS Nerd Font", "MesloLGS Nerd Font Mono", ui-monospace, monospace'
+  fontDisplay: '"Atkinson Hyperlegible", ui-sans-serif, system-ui, sans-serif'
+  fontUrl: "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+  baseSize: "18px"
+  lineHeight: "1.65"
+  letterSpacing: "0"
+
+layout:
+  radius: "0.5rem"
+  density: comfortable
+
+layoutVariant: standard
+
+colorOverrides:
+  foreground: "#4c4f69"
+  card: "#e6e9ef"
+  cardForeground: "#4c4f69"
+  popover: "#e6e9ef"
+  popoverForeground: "#4c4f69"
+  primary: "#3465a4"
+  primaryForeground: "#eff1f5"
+  secondary: "#dce0e8"
+  secondaryForeground: "#4c4f69"
+  muted: "#dce0e8"
+  mutedForeground: "#4c4f69"
+  accent: "#e6e9ef"
+  accentForeground: "#4c4f69"
+  destructive: "#d20f39"
+  destructiveForeground: "#4c4f69"
+  success: "#dceee0"
+  successForeground: "#4c4f69"
+  warning: "#f0e6d0"
+  warningForeground: "#4c4f69"
+  border: "#9ca0b0"
+  input: "#ccd0da"
+  ring: "#3465a4"
+
+componentStyles:
+  page:
+    background: "#eff1f5"
+    color: "#4c4f69"
+  card:
+    background: "#e6e9ef"
+    color: "#4c4f69"
+    boxShadow: "inset 0 0 0 1px #9ca0b0"
+  header:
+    background: "#dce0e8"
+    color: "#4c4f69"
+  sidebar:
+    background: "#e6e9ef"
+    color: "#4c4f69"
+  footer:
+    background: "#dce0e8"
+    color: "#4c4f69"
+  badge:
+    color: "#4c4f69"
+
+# Host gaps only. Prefer a colorOverride if a later Hermes release grows one.
+customCSS: |
+  /* Heading/nav scale — no YAML knob besides baseSize. */
+  h1 { font-size: 1.25rem; line-height: 1.35; font-weight: 600; }
+  h2 { font-size: 1.15rem; line-height: 1.35; font-weight: 600; }
+  h3, h4, h5, h6 { font-size: 1.05rem; line-height: 1.4; font-weight: 600; }
+  nav, aside, [role="navigation"], [data-sidebar], .sidebar {
+    font-size: 0.9rem;
+  }
+
+  /* SelectionSwitcher + [data-surface=white] reset --selection-fg to white. */
+  :root,
+  .surface-white,
+  [data-surface="white"] {
+    --selection-bg: #b6c7dc !important;
+    --selection-fg: #4c4f69 !important;
+  }
+  ::selection,
+  *::selection {
+    background: #b6c7dc !important;
+    color: #4c4f69 !important;
+  }
+
+  /* <code> is painted with --background (canvas). Use page ink. */
+  code {
+    color: inherit;
+  }
+
+  /* Switches. Official on-state is midground/15 (body ink wash) — reads as off
+     on Latte. No YAML token for checked/unchecked. */
+  [role="switch"][aria-checked="true"],
+  [role="switch"][data-state="checked"] {
+    background: #3465a4 !important;
+    border-color: #3465a4 !important;
+  }
+  [role="switch"][aria-checked="true"] > span,
+  [role="switch"][data-state="checked"] > span {
+    background: #eff1f5 !important;
+  }
+  [role="switch"][aria-checked="false"],
+  [role="switch"][data-state="unchecked"] {
+    background: #dce0e8 !important;
+    border-color: #9ca0b0 !important;
+  }
+  [role="switch"][aria-checked="false"] > span,
+  [role="switch"][data-state="unchecked"] > span {
+    background: #9ca0b0 !important;
+  }
+
+  /* Badge tones. colorOverrides.successForeground is not applied to
+     tone=success/warning — they use the fill hue as text (green on green). */
+  [tone="success"],
+  [data-tone="success"],
+  [class*="bg-success"] {
+    background: #dceee0 !important;
+    color: #4c4f69 !important;
+    border: 1px solid #9ca0b0;
+  }
+  [tone="warning"],
+  [data-tone="warning"],
+  [class*="bg-warning"] {
+    background: #f0e6d0 !important;
+    color: #4c4f69 !important;
+    border: 1px solid #9ca0b0;
+  }
+  [tone="destructive"],
+  [data-tone="destructive"],
+  [class*="bg-destructive"] {
+    background: #f3dce0 !important;
+    color: #4c4f69 !important;
+    border: 1px solid #9ca0b0;
+  }
+  [tone="outline"],
+  [data-tone="outline"],
+  [tone="secondary"],
+  [data-tone="secondary"] {
+    background: #e6e9ef !important;
+    color: #4c4f69 !important;
+    border: 1px solid #9ca0b0;
+  }
+
+  /* Embedded TUI — user YAML terminalBackground is not applied. */
+  .xterm,
+  .xterm-viewport,
+  .xterm-screen,
+  .xterm .xterm-rows {
+    background-color: #eff1f5 !important;
+    color: #4c4f69 !important;
+  }

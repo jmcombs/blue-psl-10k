@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- **Official Hermes dashboard theme** (`hermes/dashboard-themes/blue-psl-10k.yaml`)
+  - Light-only Catppuccin Latte + Path Blue chrome for `hermes dashboard`
+  - Registry name `blue-psl-10k`; install by copy/symlink into `$HERMES_HOME/dashboard-themes/`
+
 ## [0.1.0] - 2025-12-25
 
 ### Added
