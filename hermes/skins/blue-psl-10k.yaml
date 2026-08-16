@@ -1,0 +1,42 @@
+# Hermes CLI / TUI skin — Blue PSL 10K (light).
+# Canonical source: this repository (blue-psl-10k).
+# Official API: $HERMES_HOME/skins/*.yaml  (NOT dashboard-themes/)
+# Activate: /skin blue-psl-10k   or   display.skin: blue-psl-10k
+# Hexes from blue-psl-10k/palette/palette.json except selection_bg #b6c7dc
+# (same locked wash as the official dashboard theme).
+
+name: blue-psl-10k
+description: Light Catppuccin Latte + Path Blue chrome — eye-friendly pastels
+
+colors:
+  # Canvas — omitting this inherits the default dark #0e0e12.
+  background: "#eff1f5"
+  banner_border: "#9ca0b0"
+  banner_title: "#3465a4"
+  banner_accent: "#3465a4"
+  banner_dim: "#5c5f77"
+  banner_text: "#4c4f69"
+  ui_accent: "#3465a4"
+  ui_label: "#179299"
+  ui_ok: "#40a02b"
+  ui_error: "#d20f39"
+  ui_warn: "#df8e1d"
+  prompt: "#4c4f69"
+  input_rule: "#3465a4"
+  response_border: "#9ca0b0"
+  session_label: "#3465a4"
+  session_border: "#9ca0b0"
+  status_bar_bg: "#dce0e8"
+  status_bar_text: "#4c4f69"
+  status_bar_strong: "#3465a4"
+  status_bar_dim: "#5c5f77"
+  status_bar_good: "#40a02b"
+  status_bar_warn: "#df8e1d"
+  status_bar_bad: "#fe640b"
+  status_bar_critical: "#d20f39"
+  voice_status_bg: "#dce0e8"
+  selection_bg: "#b6c7dc"
+  completion_menu_bg: "#e6e9ef"
+  completion_menu_current_bg: "#b6c7dc"
+  completion_menu_meta_bg: "#e6e9ef"
+  completion_menu_meta_current_bg: "#ccd0da"

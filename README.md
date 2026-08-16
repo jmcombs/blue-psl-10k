@@ -37,6 +37,7 @@ The theme is available for:
 | pi coding agent| ✅ Ready |
 | herdr          | ✅ Ready |
 | Hermes dashboard | ✅ Ready |
+| Hermes CLI/TUI | ✅ Ready |
 <!-- markdownlint-enable MD060 -->
 
 ### Preview
@@ -202,6 +203,25 @@ ln -s "$(pwd)/hermes/dashboard-themes/blue-psl-10k.yaml" \
 1. Refresh the browser. No process restart is required.
 
 See [hermes/README.md](hermes/README.md) and [Extending the Dashboard](https://hermes-agent.nousresearch.com/docs/user-guide/features/extending-the-dashboard).
+
+### Hermes CLI/TUI
+
+Official CLI/TUI skin YAML. Different schema from the dashboard theme — install under `$HERMES_HOME/skins/`, not `dashboard-themes/`. The registry key is `blue-psl-10k`.
+
+1. Copy or symlink the YAML into `${HERMES_HOME:-$HOME/.hermes}/skins/`:
+
+```bash
+mkdir -p "${HERMES_HOME:-$HOME/.hermes}/skins"
+cp hermes/skins/blue-psl-10k.yaml "${HERMES_HOME:-$HOME/.hermes}/skins/"
+
+# Or symlink from a clone of this repo
+ln -s "$(pwd)/hermes/skins/blue-psl-10k.yaml" \
+  "${HERMES_HOME:-$HOME/.hermes}/skins/blue-psl-10k.yaml"
+```
+
+1. Activate with `/skin blue-psl-10k`, or set `display.skin: blue-psl-10k` in the Hermes config.
+
+See [hermes/README.md](hermes/README.md).
 
 ### Neovim
 

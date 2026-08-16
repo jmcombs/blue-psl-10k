@@ -1,6 +1,6 @@
 # PLAN — Hermes official dashboard theme
 
-Add Blue PSL 10K as a first-class port for the official Hermes Agent dashboard (`hermes dashboard`, port 9119), using the documented `$HERMES_HOME/dashboard-themes/*.yaml` API. Source of the locked YAML is the eval stack file that was visually tuned.
+Add Blue PSL 10K as first-class Hermes ports: the official dashboard theme (`$HERMES_HOME/dashboard-themes/*.yaml`) and the official CLI/TUI skin (`$HERMES_HOME/skins/*.yaml`). They are different schemas. Sources of the locked YAML are the eval-stack files that were visually tuned.
 
 **Authoritative sources:**
 
@@ -24,7 +24,11 @@ Add Blue PSL 10K as a first-class port for the official Hermes Agent dashboard (
 
 | ID | Decision | Value | Source |
 |---|---|---|---|
-| H1 | Product | Official `hermes dashboard` theme YAML only — not community nesquena/hermes-webui, not CLI skins | official docs |
+| H1 | Phase 1 product | Official `hermes dashboard` theme YAML — not community nesquena/hermes-webui | official docs |
+| H12 | Phase 2 product | Official Hermes CLI/TUI skin YAML at `hermes/skins/blue-psl-10k.yaml` | official skins docs + human 2026-08-16 |
+| H13 | TUI canvas | `colors.background` **must** be `#eff1f5` — omitting it inherits default `#0e0e12` | skin_engine + eval lock |
+| H14 | TUI copy | Start from `/Users/jmcombs/Projects/hermes-eval/data/skins/blue-psl-10k.yaml`; do not reinvent tokens | eval lock |
+| H15 | TUI extra hex | `#b6c7dc` selection wash is allowed (same as H8) | eval lock |
 | H2 | Path | `hermes/dashboard-themes/blue-psl-10k.yaml` | CONTRIBUTING new-ecosystem + official glob `*.yaml` |
 | H3 | Registry `name:` | `blue-psl-10k` | official: filename ignored; `name:` is the key |
 | H4 | Light only | No dark variant | palette `variant: light` |
@@ -45,7 +49,8 @@ Add Blue PSL 10K as a first-class port for the official Hermes Agent dashboard (
 | git | yes | blue-psl-10k repo |
 | gh | yes | issues + PRs |
 | python3 | yes | YAML/hex checks |
-| hermes-dashboard-live | no | visual check stays in hermes-eval; not required for this phase |
+| hermes-dashboard-live | no | visual check stays in hermes-eval; not required |
+| hermes-tui-live | no | visual TUI check stays in hermes-eval; not required |
 
 ---
 
@@ -63,6 +68,7 @@ Add Blue PSL 10K as a first-class port for the official Hermes Agent dashboard (
 | Phase | Scope | Entry | Branch type |
 |---|---|---|---|
 | 1 | Official dashboard theme + README/CONTRIBUTING/CHANGELOG | none | feat |
+| 2 | Official CLI/TUI skin + docs | Phase 1 | feat |
 
 ---
 
@@ -85,7 +91,7 @@ Add Blue PSL 10K as a first-class port for the official Hermes Agent dashboard (
 **Out:**
 
 - Community WebUI `extensions/` skin
-- Hermes CLI/TUI `skins/` (separate work)
+- Hermes CLI/TUI `skins/` (Phase 2)
 - Dark theme
 - Editing `/Users/jmcombs/Projects/hermes-eval` except reading the source YAML
 
@@ -123,11 +129,69 @@ None. Visual dashboard check is `hermes-dashboard-live: no` and is not a gate.
 
 ---
 
+## Phase 2 — Official Hermes CLI/TUI skin
+
+**Entry:** Phase 1 (dashboard theme + `hermes/` docs exist on the branch this stacks on)
+**Shippable as:** `hermes/skins/blue-psl-10k.yaml` documented next to the dashboard theme.
+
+**Skills:** phase-build, git-hygiene, repo-layout, testing-standards
+
+### Objectives & Scope
+
+**In:**
+
+- Locked eval TUI skin copied into this repo
+- Install docs: `$HERMES_HOME/skins/` + `/skin blue-psl-10k` + `display.skin`
+- README ecosystem table row for Hermes CLI/TUI
+- CHANGELOG Unreleased note
+
+**Out:**
+
+- Re-tuning dashboard YAML tokens (Phase 1)
+- Community WebUI extensions
+- Dark TUI variant
+- Editing `/Users/jmcombs/Projects/hermes-eval` except reading the source YAML
+- Merging Phase 1
+
+### Architectural Constraints
+
+- Different schema from `dashboard-themes/`. Do not reuse dashboard keys (`palette`, `colorOverrides`, `customCSS`).
+- `name: blue-psl-10k`
+- `colors.background: "#eff1f5"` required (H13)
+- Hexes from `palette/palette.json` except H15 `#b6c7dc`
+- Chrome accent `#3465a4`; body `#4c4f69`
+
+### Actionable TODOs
+
+- [ ] `hermes/skins/blue-psl-10k.yaml` — contents copied from `/Users/jmcombs/Projects/hermes-eval/data/skins/blue-psl-10k.yaml` (may add a one-line canonical-source comment; do not change tokens)
+- [ ] `hermes/README.md` — add a CLI/TUI section: copy/symlink to `${HERMES_HOME:-$HOME/.hermes}/skins/`, `/skin blue-psl-10k` or `display.skin: blue-psl-10k`
+- [ ] `README.md` — add a `Hermes CLI/TUI` row to the ecosystem table (`✅ Ready`) and a short install subsection
+- [ ] `CHANGELOG.md` — under `[Unreleased]` / Added: official Hermes CLI/TUI skin
+
+### Testing Gates
+
+| Criterion | Command | Expected |
+|---|---|---|
+| Skin exists | `test -f hermes/skins/blue-psl-10k.yaml && echo ok` | `ok` |
+| Registry name | `python3 -c "import pathlib,re; t=pathlib.Path('hermes/skins/blue-psl-10k.yaml').read_text(); assert re.search(r'^name:\\s*blue-psl-10k\\s*$', t, re.M); print('ok')"` | `ok` |
+| Light canvas | `python3 -c "import pathlib; t=pathlib.Path('hermes/skins/blue-psl-10k.yaml').read_text(); assert 'background: \"#eff1f5\"' in t; print('ok')"` | `ok` |
+| Path blue | `grep -n '#3465a4' hermes/skins/blue-psl-10k.yaml` | match |
+| README table row | `grep -n 'Hermes CLI/TUI' README.md` | match |
+| hermes README TUI | `grep -n -E 'skins/\\|display.skin\\|/skin' hermes/README.md` | match |
+| CHANGELOG | `grep -n -A20 '\\[Unreleased\\]' CHANGELOG.md \| grep -i 'TUI\\|CLI/TUI\\|skin'` | match |
+
+### Testing Gates (needs)
+
+None. Visual TUI check is `hermes-tui-live: no`.
+
+---
+
 ## Appendix A — Asset / source map
 
 | Source | Destination | Phase |
 |---|---|---|
 | hermes-eval `data/dashboard-themes/blue-psl-10k.yaml` | `hermes/dashboard-themes/blue-psl-10k.yaml` | 1 |
+| hermes-eval `data/skins/blue-psl-10k.yaml` | `hermes/skins/blue-psl-10k.yaml` | 2 |
 
 ## Appendix B — Decision Log (ADR index)
 
@@ -138,6 +202,7 @@ None. Visual dashboard check is `hermes-dashboard-live: no` and is not a gate.
 ## Appendix C — Master TODO index
 
 - [ ] Phase 1 — Official Hermes dashboard theme
+- [ ] Phase 2 — Official Hermes CLI/TUI skin
 
 ## Appendix D — Definition of Done (every phase)
 
