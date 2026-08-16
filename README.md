@@ -186,42 +186,38 @@ The overlay unifies herdr's UI with the rest of Blue PSL 10K — the `#3465a4` p
 
 ### Hermes dashboard
 
-Official theme YAML for `hermes dashboard` (port 9119). The registry key is `blue-psl-10k`.
+Official theme for `hermes dashboard` (port 9119). Registry key `blue-psl-10k`.
 
-1. Copy or symlink the YAML into `$HERMES_HOME/dashboard-themes/` (`HERMES_HOME` defaults to `~/.hermes`):
+Download from GitHub (no clone):
 
 ```bash
 mkdir -p "${HERMES_HOME:-$HOME/.hermes}/dashboard-themes"
-cp hermes/dashboard-themes/blue-psl-10k.yaml "${HERMES_HOME:-$HOME/.hermes}/dashboard-themes/"
-
-# Or symlink from a clone of this repo
-ln -s "$(pwd)/hermes/dashboard-themes/blue-psl-10k.yaml" \
-  "${HERMES_HOME:-$HOME/.hermes}/dashboard-themes/blue-psl-10k.yaml"
+curl -fsSL https://raw.githubusercontent.com/jmcombs/blue-psl-10k/main/hermes/dashboard-themes/blue-psl-10k.yaml \
+  -o "${HERMES_HOME:-$HOME/.hermes}/dashboard-themes/blue-psl-10k.yaml"
 ```
 
-1. Set `dashboard.theme: blue-psl-10k` in the Hermes config, or pick **Blue PSL 10K** in the dashboard palette.
-1. Refresh the browser. No process restart is required.
+Until this is on `main`, use `/feat/hermes-dashboard-theme/` instead of `/main/`.
 
-See [hermes/README.md](hermes/README.md) and [Extending the Dashboard](https://hermes-agent.nousresearch.com/docs/user-guide/features/extending-the-dashboard).
+Or `git clone https://github.com/jmcombs/blue-psl-10k.git` and copy `hermes/dashboard-themes/blue-psl-10k.yaml` into that same directory.
+
+Then set `dashboard.theme: blue-psl-10k` in `~/.hermes/config.yaml`, or pick **Blue PSL 10K** in the dashboard palette and refresh.
+
+Full steps: [hermes/README.md](hermes/README.md).
 
 ### Hermes CLI/TUI
 
-Official CLI/TUI skin YAML. Different schema from the dashboard theme — install under `$HERMES_HOME/skins/`, not `dashboard-themes/`. The registry key is `blue-psl-10k`.
-
-1. Copy or symlink the YAML into `${HERMES_HOME:-$HOME/.hermes}/skins/`:
+Official CLI/TUI skin. Different schema — it goes in `skins/`, not `dashboard-themes/`.
 
 ```bash
 mkdir -p "${HERMES_HOME:-$HOME/.hermes}/skins"
-cp hermes/skins/blue-psl-10k.yaml "${HERMES_HOME:-$HOME/.hermes}/skins/"
-
-# Or symlink from a clone of this repo
-ln -s "$(pwd)/hermes/skins/blue-psl-10k.yaml" \
-  "${HERMES_HOME:-$HOME/.hermes}/skins/blue-psl-10k.yaml"
+curl -fsSL https://raw.githubusercontent.com/jmcombs/blue-psl-10k/main/hermes/skins/blue-psl-10k.yaml \
+  -o "${HERMES_HOME:-$HOME/.hermes}/skins/blue-psl-10k.yaml"
+hermes config set display.skin blue-psl-10k
 ```
 
-1. Activate with `/skin blue-psl-10k`, or set `display.skin: blue-psl-10k` in the Hermes config.
+Or `/skin blue-psl-10k` in a running TUI. Same `/main/` vs branch caveat as the dashboard.
 
-See [hermes/README.md](hermes/README.md).
+Full steps: [hermes/README.md](hermes/README.md).
 
 ### Neovim
 

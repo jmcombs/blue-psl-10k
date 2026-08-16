@@ -24,8 +24,9 @@ Add Blue PSL 10K as first-class Hermes ports: the official dashboard theme (`$HE
 
 | ID | Decision | Value | Source |
 |---|---|---|---|
-| H1 | Phase 1 product | Official `hermes dashboard` theme YAML — not community nesquena/hermes-webui | official docs |
-| H12 | Phase 2 product | Official Hermes CLI/TUI skin YAML at `hermes/skins/blue-psl-10k.yaml` | official skins docs + human 2026-08-16 |
+| H1 | Phase 1 product | Official `hermes dashboard` theme YAML | official docs |
+| H12 | Phase 2 product | Official Hermes CLI/TUI skin YAML at `hermes/skins/blue-psl-10k.yaml`. **Same PR as Phase 1** (do not open a second PR). | official skins docs + human 2026-08-16 |
+| H16 | Community WebUI | **Out of scope** — do not add `hermes/webui/` | human 2026-08-16 |
 | H13 | TUI canvas | `colors.background` **must** be `#eff1f5` — omitting it inherits default `#0e0e12` | skin_engine + eval lock |
 | H14 | TUI copy | Start from `/Users/jmcombs/Projects/hermes-eval/data/skins/blue-psl-10k.yaml`; do not reinvent tokens | eval lock |
 | H15 | TUI extra hex | `#b6c7dc` selection wash is allowed (same as H8) | eval lock |
@@ -37,7 +38,7 @@ Add Blue PSL 10K as first-class Hermes ports: the official dashboard theme (`$HE
 | H7 | Hex source | Every color hex in the YAML must appear in `palette/palette.json` **or** be a documented host-gap wash listed in H8 | CONTRIBUTING |
 | H8 | Allowed non-palette hexes | `#dceee0` success wash, `#f0e6d0` warning wash, `#f3dce0` destructive wash, `#b6c7dc` selection wash — derived 10–30% mixes already locked in the eval YAML | eval tune |
 | H9 | customCSS | Allowed only for documented host gaps (SelectionSwitcher, `[data-surface=white]`, `<code>` painted with `--background`, switch on-state, badge tone ink, xterm). Do not add new selector patches. | official `customCSS` + eval lock |
-| H10 | Git | Branch `feat/hermes-dashboard-theme`, Conventional Commits `feat(hermes): …`, PR + `Closes #<n>` | git-hygiene |
+| H10 | Git | **One PR** on `feat/hermes-dashboard-theme` covering dashboard + TUI. No stacked second PR. Conventional Commits `feat(hermes): …`, `Closes #<n>` | git-hygiene + human 2026-08-16 |
 | H11 | Copy | Start from the eval YAML; do not reinvent tokens | eval file |
 
 ---
@@ -68,7 +69,7 @@ Add Blue PSL 10K as first-class Hermes ports: the official dashboard theme (`$HE
 | Phase | Scope | Entry | Branch type |
 |---|---|---|---|
 | 1 | Official dashboard theme + README/CONTRIBUTING/CHANGELOG | none | feat |
-| 2 | Official CLI/TUI skin + docs | Phase 1 | feat |
+| 2 | Official CLI/TUI skin + docs (**same PR as Phase 1**) | Phase 1 | feat |
 
 ---
 
@@ -90,8 +91,6 @@ Add Blue PSL 10K as first-class Hermes ports: the official dashboard theme (`$HE
 
 **Out:**
 
-- Community WebUI `extensions/` skin
-- Hermes CLI/TUI `skins/` (Phase 2)
 - Dark theme
 - Editing `/Users/jmcombs/Projects/hermes-eval` except reading the source YAML
 
@@ -141,16 +140,17 @@ None. Visual dashboard check is `hermes-dashboard-live: no` and is not a gate.
 **In:**
 
 - Locked eval TUI skin copied into this repo
-- Install docs: `$HERMES_HOME/skins/` + `/skin blue-psl-10k` + `display.skin`
+- Install docs that **fetch** the files (clone this repo **or** `curl` from GitHub raw) — not `cp` from a path the reader does not have
 - README ecosystem table row for Hermes CLI/TUI
 - CHANGELOG Unreleased note
+
+Lands on the **same PR** as Phase 1.
 
 **Out:**
 
 - Re-tuning dashboard YAML tokens (Phase 1)
-- Community WebUI extensions
-- Dark TUI variant
-- Editing `/Users/jmcombs/Projects/hermes-eval` except reading the source YAML
+- Dark TUI / dark WebUI variant
+- Editing `/Users/jmcombs/Projects/hermes-eval` except reading the source files
 - Merging Phase 1
 
 ### Architectural Constraints
@@ -164,8 +164,8 @@ None. Visual dashboard check is `hermes-dashboard-live: no` and is not a gate.
 ### Actionable TODOs
 
 - [ ] `hermes/skins/blue-psl-10k.yaml` — contents copied from `/Users/jmcombs/Projects/hermes-eval/data/skins/blue-psl-10k.yaml` (may add a one-line canonical-source comment; do not change tokens)
-- [ ] `hermes/README.md` — add a CLI/TUI section: copy/symlink to `${HERMES_HOME:-$HOME/.hermes}/skins/`, `/skin blue-psl-10k` or `display.skin: blue-psl-10k`
-- [ ] `README.md` — add a `Hermes CLI/TUI` row to the ecosystem table (`✅ Ready`) and a short install subsection
+- [ ] `hermes/README.md` — CLI/TUI section: **how to get the file** (`curl` raw GitHub URL **or** clone `https://github.com/jmcombs/blue-psl-10k`), then install to `${HERMES_HOME:-$HOME/.hermes}/skins/`, activate with `/skin blue-psl-10k` or `display.skin: blue-psl-10k`. Same standard for the dashboard section.
+- [ ] `README.md` — ecosystem row `Hermes CLI/TUI` (`✅ Ready`) plus install subsection that also shows clone/`curl`, not only `cp` from a mystery cwd
 - [ ] `CHANGELOG.md` — under `[Unreleased]` / Added: official Hermes CLI/TUI skin
 
 ### Testing Gates
@@ -178,7 +178,9 @@ None. Visual dashboard check is `hermes-dashboard-live: no` and is not a gate.
 | Path blue | `grep -n '#3465a4' hermes/skins/blue-psl-10k.yaml` | match |
 | README table row | `grep -n 'Hermes CLI/TUI' README.md` | match |
 | hermes README TUI | `grep -n -E 'skins/\\|display.skin\\|/skin' hermes/README.md` | match |
-| CHANGELOG | `grep -n -A20 '\\[Unreleased\\]' CHANGELOG.md \| grep -i 'TUI\\|CLI/TUI\\|skin'` | match |
+| CHANGELOG TUI | `grep -n -A20 '\\[Unreleased\\]' CHANGELOG.md \| grep -i 'TUI\\|CLI/TUI\\|skin'` | match |
+| Install fetch (dashboard) | `grep -n 'raw.githubusercontent.com/jmcombs/blue-psl-10k' hermes/README.md` | match |
+| Install fetch (root) | `grep -n 'raw.githubusercontent.com/jmcombs/blue-psl-10k' README.md` | match |
 
 ### Testing Gates (needs)
 

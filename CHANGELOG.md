@@ -11,11 +11,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **Official Hermes dashboard theme** (`hermes/dashboard-themes/blue-psl-10k.yaml`)
   - Light-only Catppuccin Latte + Path Blue chrome for `hermes dashboard`
-  - Registry name `blue-psl-10k`; install by copy/symlink into `$HERMES_HOME/dashboard-themes/`
+  - Registry name `blue-psl-10k`; install via `curl` from GitHub raw or clone this repo
 
 - **Official Hermes CLI/TUI skin** (`hermes/skins/blue-psl-10k.yaml`)
   - Light-only Catppuccin Latte + Path Blue chrome for the Hermes CLI/TUI
-  - Registry name `blue-psl-10k`; install by copy/symlink into `$HERMES_HOME/skins/`
+  - Registry name `blue-psl-10k`; install via `curl` from GitHub raw or clone this repo
   - Activate with `/skin blue-psl-10k` or `display.skin: blue-psl-10k`
 
 ## [0.1.0] - 2025-12-25

@@ -4,40 +4,63 @@ Light-only ports for official Hermes Agent surfaces. They use **different schema
 
 The registry key for both is `blue-psl-10k` (`name:` in the YAML). Official globs load `*.yaml` only.
 
-## Dashboard theme
+Files live in this GitHub repo: [jmcombs/blue-psl-10k](https://github.com/jmcombs/blue-psl-10k).
 
-Official theme for `hermes dashboard` (port 9119).
+## Get the files
 
-Copy or symlink the YAML into `$HERMES_HOME/dashboard-themes/` (`HERMES_HOME` defaults to `~/.hermes`):
-
-```bash
-mkdir -p "${HERMES_HOME:-$HOME/.hermes}/dashboard-themes"
-cp hermes/dashboard-themes/blue-psl-10k.yaml "${HERMES_HOME:-$HOME/.hermes}/dashboard-themes/"
-
-# Or symlink from a clone of this repo
-ln -s "$(pwd)/hermes/dashboard-themes/blue-psl-10k.yaml" \
-  "${HERMES_HOME:-$HOME/.hermes}/dashboard-themes/blue-psl-10k.yaml"
-```
-
-Set `dashboard.theme: blue-psl-10k` in the Hermes config, or pick **Blue PSL 10K** in the dashboard palette.
-
-Refresh the browser. No process restart is required.
-
-See [Extending the Dashboard](https://hermes-agent.nousresearch.com/docs/user-guide/features/extending-the-dashboard).
-
-## CLI / TUI skin
-
-Official skin for the Hermes CLI/TUI. This is **not** a dashboard theme — install it under `skins/`, not `dashboard-themes/`.
-
-Copy or symlink the YAML into `${HERMES_HOME:-$HOME/.hermes}/skins/`:
+**One-shot (no clone)** — download from GitHub raw:
 
 ```bash
-mkdir -p "${HERMES_HOME:-$HOME/.hermes}/skins"
-cp hermes/skins/blue-psl-10k.yaml "${HERMES_HOME:-$HOME/.hermes}/skins/"
-
-# Or symlink from a clone of this repo
-ln -s "$(pwd)/hermes/skins/blue-psl-10k.yaml" \
-  "${HERMES_HOME:-$HOME/.hermes}/skins/blue-psl-10k.yaml"
+REPO=https://raw.githubusercontent.com/jmcombs/blue-psl-10k/main
+HOME_H="${HERMES_HOME:-$HOME/.hermes}"
+mkdir -p "$HOME_H/dashboard-themes" "$HOME_H/skins"
+curl -fsSL "$REPO/hermes/dashboard-themes/blue-psl-10k.yaml" \
+  -o "$HOME_H/dashboard-themes/blue-psl-10k.yaml"
+curl -fsSL "$REPO/hermes/skins/blue-psl-10k.yaml" \
+  -o "$HOME_H/skins/blue-psl-10k.yaml"
 ```
 
-Activate with `/skin blue-psl-10k`, or set `display.skin: blue-psl-10k` in the Hermes config.
+Until this lands on `main`, replace `/main/` with `/feat/hermes-dashboard-theme/`.
+
+**Or clone, then copy:**
+
+```bash
+git clone https://github.com/jmcombs/blue-psl-10k.git
+cd blue-psl-10k
+HOME_H="${HERMES_HOME:-$HOME/.hermes}"
+mkdir -p "$HOME_H/dashboard-themes" "$HOME_H/skins"
+cp hermes/dashboard-themes/blue-psl-10k.yaml "$HOME_H/dashboard-themes/"
+cp hermes/skins/blue-psl-10k.yaml "$HOME_H/skins/"
+```
+
+## Activate — dashboard
+
+In `~/.hermes/config.yaml` (or `$HERMES_HOME/config.yaml`):
+
+```yaml
+dashboard:
+  theme: blue-psl-10k
+```
+
+Or open `hermes dashboard` (port 9119), click the palette icon, pick **Blue PSL 10K**. Refresh the browser. No process restart.
+
+Docs: [Extending the Dashboard](https://hermes-agent.nousresearch.com/docs/user-guide/features/extending-the-dashboard).
+
+## Activate — CLI / TUI
+
+This is **not** a dashboard theme. It must live under `skins/`.
+
+```bash
+hermes config set display.skin blue-psl-10k
+```
+
+Or in a running CLI/TUI: `/skin blue-psl-10k`.
+
+Or in `config.yaml`:
+
+```yaml
+display:
+  skin: blue-psl-10k
+```
+
+`colors.background` is Latte `#eff1f5`. If the pane stays black, the **terminal** profile is dark — also set `HERMES_TUI_THEME=light`.
