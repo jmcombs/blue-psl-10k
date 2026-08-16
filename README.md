@@ -36,6 +36,8 @@ The theme is available for:
 | Neovim         | ✅ Ready |
 | pi coding agent| ✅ Ready |
 | herdr          | ✅ Ready |
+| Hermes dashboard | ✅ Ready |
+| Hermes CLI/TUI | ✅ Ready |
 <!-- markdownlint-enable MD060 -->
 
 ### Preview
@@ -181,6 +183,41 @@ herdr server reload-config
 The overlay unifies herdr's UI with the rest of Blue PSL 10K — the `#3465a4` path blue on tabs, borders, and accents; the Oh-My-Posh status color language for agent/git states; and an eye-friendly low-chroma active-row background.
 
 > **Note:** herdr exposes no font-weight control and no per-row foreground token, so the agent subtitle can't be bolded and the active row uses a light blue (dark text stays legible). See the comments in `herdr/blue-psl-10k.toml` for details.
+
+### Hermes dashboard
+
+Official theme for `hermes dashboard` (port 9119). Registry key `blue-psl-10k`.
+
+Download from GitHub (no clone):
+
+```bash
+mkdir -p "${HERMES_HOME:-$HOME/.hermes}/dashboard-themes"
+curl -fsSL https://raw.githubusercontent.com/jmcombs/blue-psl-10k/main/hermes/dashboard-themes/blue-psl-10k.yaml \
+  -o "${HERMES_HOME:-$HOME/.hermes}/dashboard-themes/blue-psl-10k.yaml"
+```
+
+Until this is on `main`, use `/feat/hermes-dashboard-theme/` instead of `/main/`.
+
+Or `git clone https://github.com/jmcombs/blue-psl-10k.git` and copy `hermes/dashboard-themes/blue-psl-10k.yaml` into that same directory.
+
+Then set `dashboard.theme: blue-psl-10k` in `~/.hermes/config.yaml`, or pick **Blue PSL 10K** in the dashboard palette and refresh.
+
+Full steps: [hermes/README.md](hermes/README.md).
+
+### Hermes CLI/TUI
+
+Official CLI/TUI skin. Different schema — it goes in `skins/`, not `dashboard-themes/`.
+
+```bash
+mkdir -p "${HERMES_HOME:-$HOME/.hermes}/skins"
+curl -fsSL https://raw.githubusercontent.com/jmcombs/blue-psl-10k/main/hermes/skins/blue-psl-10k.yaml \
+  -o "${HERMES_HOME:-$HOME/.hermes}/skins/blue-psl-10k.yaml"
+hermes config set display.skin blue-psl-10k
+```
+
+Or `/skin blue-psl-10k` in a running TUI. Same `/main/` vs branch caveat as the dashboard.
+
+Full steps: [hermes/README.md](hermes/README.md).
 
 ### Neovim
 
