@@ -8,7 +8,7 @@
 # Import:
 #   Settings → Theme → Import, and choose this file
 #   or, with Remote Control on:
-#   rex -C CLIENT do client.theme.import path="$PWD/rex/blue-psl-10k"
+#   rex -C CLIENT do client.theme.import path="$PWD/rex/Blue PSL 10K"
 #
 # Then select it for light appearance. Leave the dark theme alone.
 #
@@ -63,7 +63,9 @@ palette = 7=#acb0be
 palette = 15=#bcc0cc
 
 # Extended palette. Ghostty's theme file stops at 15. Rex also themes
-# indices 16–255 (palette.json "indexed"). 18–255 stay on Rex's xterm cube.
+# indices 16–255; palette.json "indexed" sets 16 and 17, and 18–255 stay on
+# Rex's xterm cube. Rex uses them only when Settings → Themes → Light Mode →
+# Use extended theme palette is on.
 palette = 16=#fe640b
 palette = 17=#dc8a78
 

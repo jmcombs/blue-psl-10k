@@ -187,19 +187,21 @@ The overlay unifies herdr's UI with the rest of Blue PSL 10K — the `#3465a4` p
 
 ### Rex
 
-Light only. Rex imports a Ghostty theme file, so `rex/blue-psl-10k` is that file plus the two extended-palette slots Rex themes and Ghostty's port does not (`palette.json` indices 16 and 17). Chrome roles (accent, danger, success, warning, info, surfaces) are derived by Rex from that palette; the intended hex values are commented in the file. There is no dark variant.
+Light only. Rex imports a Ghostty theme file, so `rex/Blue PSL 10K` is that file plus the two extended-palette slots Rex themes and Ghostty's port does not (`palette.json` indices 16 and 17). Chrome roles (accent, danger, success, warning, info, surfaces) are derived by Rex from that palette; the intended hex values are commented in the file. There is no dark variant.
 
-1. In Rex, open **Settings → Theme → Import** and choose `rex/blue-psl-10k`. Select it for light appearance. Leave the dark theme unchanged.
+1. In Rex, open **Settings → Theme → Import** and choose `rex/Blue PSL 10K`. Select it for light appearance. Leave the dark theme unchanged.
+
+   Turn on **Settings → Themes → Light Mode → Use extended theme palette**. When it is off, Rex uses xterm's standard colors for 16 and 17 instead of the theme's peach and rosewater.
 
    With Remote Control on, the same import is:
 
    ```bash
-   rex -C CLIENT do client.theme.import path="$PWD/rex/blue-psl-10k"
+   rex -C CLIENT do client.theme.import path="$PWD/rex/Blue PSL 10K"
    ```
 
 2. Set the terminal font to **MesloLGS Nerd Font**, face **Regular**, **14pt**.
 
-3. In **Settings → Interface → Appearance**, set **Interface style** to **Classic**, turn **Use glass for panes** off, and turn **Tint with theme** on. Glass and blend materials wash the background out toward white; these settings keep it at `#eff1f5`, as the comments in `rex/blue-psl-10k` note.
+3. In **Settings → Interface → Appearance**, set **Interface style** to **Classic**, turn **Use glass for panes** off, and turn **Tint with theme** on. Glass and blend materials wash the background out toward white; these settings keep it at `#eff1f5`, as the comments in `rex/Blue PSL 10K` note.
 
 Rex does not take theme, font, or size from `init.lua`.
 
