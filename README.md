@@ -36,6 +36,7 @@ The theme is available for:
 | Neovim         | ✅ Ready |
 | pi coding agent| ✅ Ready |
 | herdr          | ✅ Ready |
+| Rex            | ✅ Ready |
 | Hermes dashboard | ✅ Ready |
 | Hermes CLI/TUI | ✅ Ready |
 <!-- markdownlint-enable MD060 -->
@@ -183,6 +184,24 @@ herdr server reload-config
 The overlay unifies herdr's UI with the rest of Blue PSL 10K — the `#3465a4` path blue on tabs, borders, and accents; the Oh-My-Posh status color language for agent/git states; and an eye-friendly low-chroma active-row background.
 
 > **Note:** herdr exposes no font-weight control and no per-row foreground token, so the agent subtitle can't be bolded and the active row uses a light blue (dark text stays legible). See the comments in `herdr/blue-psl-10k.toml` for details.
+
+### Rex
+
+Light only. Rex imports a Ghostty theme file, so `rex/blue-psl-10k` is that file plus the two extended-palette slots Rex themes and Ghostty's port does not (`palette.json` indices 16 and 17). Chrome roles (accent, danger, success, warning, info, surfaces) are derived by Rex from that palette; the intended hex values are commented in the file. There is no dark variant.
+
+1. In Rex, open **Settings → Theme → Import** and choose `rex/blue-psl-10k`. Select it for light appearance. Leave the dark theme unchanged.
+
+   With Remote Control on, the same import is:
+
+   ```bash
+   rex -C CLIENT do client.theme.import path="$PWD/rex/blue-psl-10k"
+   ```
+
+2. Set the terminal font to **MesloLGS Nerd Font**, face **Regular**, **14pt**.
+
+3. In **Settings → Interface → Appearance**, set **Interface style** to **Classic**, turn **Use glass for panes** off, and turn **Tint with theme** on. Glass and blend materials wash the background out toward white; these settings keep it at `#eff1f5`, as the comments in `rex/blue-psl-10k` note.
+
+Rex does not take theme, font, or size from `init.lua`.
 
 ### Hermes dashboard
 
