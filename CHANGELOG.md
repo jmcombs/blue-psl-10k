@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **Rex theme** (`rex/Blue PSL 10K`)
+  - Light-only Ghostty-format theme Rex can import
+  - Same ANSI palette as the Ghostty port, including path blue `#3465a4`
+  - Extended palette indices 16 (peach `#fe640b`) and 17 (rosewater `#dc8a78`), which Rex themes and the Ghostty file does not
+  - Commented chrome-role mapping (accent, status, surfaces); no dark variant
+
 - **Official Hermes dashboard theme** (`hermes/dashboard-themes/blue-psl-10k.yaml`)
   - Light-only Catppuccin Latte + Path Blue chrome for `hermes dashboard`
   - Registry name `blue-psl-10k`; install via `curl` from GitHub raw or clone this repo
